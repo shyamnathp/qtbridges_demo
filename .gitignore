@@ -38,3 +38,7 @@ speaker-notes.md
 
 # Optional: Exclude compiled CSS if you're using SASS/SCSS
 css/*.css.map
+
+# Exclude Reveal.js build artifacts
+reveal.js/node_modules/
+reveal.js/dist/

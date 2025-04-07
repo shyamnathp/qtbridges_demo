@@ -118,48 +118,6 @@
         </p>
       </section>
 
-      <!-- <section>
-        <h2>Modern Developer <i class="blue">Expectations</i> 🌟</h2>
-        <ul>
-          <li class="fragment">Cross-platform support (desktop, mobile, web) 🖥️📱🌐</li>
-          <li class="fragment">Rapid development cycles with minimal friction ⚡</li>
-          <li class="fragment">Frameworks that integrate seamlessly with their preferred languages 🔗</li>
-        </ul>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">How do frameworks meet these expectations? 🤔</p>
-        <aside class="notes">
-          - Highlight the shift in developer needs.
-          - Emphasize adaptability and ease of use as critical factors.
-          - Set the stage for discussing how Qt addresses these expectations.
-        </aside>
-      </section>
-
-      <section>
-        <h2>The Rise of <i class="qt-green">Modern Frameworks</i> 🚀</h2>
-        <ul>
-          <div class="fragment">
-            <li>Frameworks like <strong>Electron</strong>, <strong>Flutter</strong>, and <strong>Tauri</strong> have gained popularity because they:</li>
-            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-              <img src="img/electro.png" alt="Electron Logo" style="width: 80px; height: auto;">
-              <img src="img/flutter.svg" alt="Flutter Logo" style="width: 80px; height: auto;">
-              <img src="img/tauri.svg" alt="Tauri Logo" style="width: 80px; height: auto;">
-            </div>
-          </div>
-          <ul>
-            <li class="fragment">Provide a modern, declarative frontend language (HTML/JS for Electron, Dart for Flutter).</li>
-            <li class="fragment">Allow developers to use multiple backend languages (Python, Rust, Kotlin, etc.).</li>
-            <li class="fragment">Focus on developer experience and ease of use 😊.</li>
-          </ul>
-        </ul>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="qt-green">Inference:</i> Multi-language support plays a key role in their success.
-        </p>
-        <aside class="notes">
-          - Establish why modern frameworks like Electron, Flutter, and Tauri are popular.
-          - Highlight their focus on multi-language support and developer experience.
-          - Introduce multi-language support as a key differentiator.
-        </aside>
-      </section> -->
-
       <section data-transition="slide-in fade-out">
         <h2>Why <i class="qt-green">Multi-Language Support</i> Matters 🔌</h2>
         <ul>
@@ -249,6 +207,9 @@
             </ul>
           </li>
         </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="yellow">But what made PySide6 possible? Let's meet the hidden hero...</i>
+        </p>
         <aside class="notes">
           - Discuss the trade-offs of each approach
           - Highlight why language bindings are currently our best option
@@ -256,67 +217,236 @@
         </aside>
       </section>
 
-      <!-- Slide: Meet Shiboken -->
       <section data-transition="slide-in fade-out">
         <h2>Meet <i class="yellow">Shiboken</i> 🛠️</h2>
         <ul>
-          <li>Introduce Shiboken and explain its role in creating language bindings for Qt. Discuss how it simplifies the process of generating bindings and allows developers to focus on their code.</li>
-          <li>Highlight why the way we do it in Shiboken is better than other similar approaches, and we need to put emphasis on why not touching the source code (qt framework) is key for having binding for such a big framework.</li>
-          <li>Demonstrate an example with a short and complex code and how to expose that to Python, this needs to highlight the usages of Shiboken as stated in https://qtinfo.dev/qtforpython/#/57 (55, 56 and 57 plus mention to QtScrypt).</li>
-          <li>Shiboken Wizard</li>
-        </ul>
-      </section>
-
-      <!-- Slide: Shiboken vs. Other Tools -->
-      <section data-transition="slide-in fade-out">
-        <h2>Comparing Binding <i class="blue">Tools</i> ⚔️</h2>
-        <ul>
-          <li>Compare Shiboken with other binding generators:</li>
+          <li class="fragment">Binding generator tool for creating Python bindings for C++ libraries</li>
+          <li class="fragment">Core technology behind PySide6</li>
+          <li class="fragment">Features on par with other popular binding generators like <i class="blue">pybind11</i> and <i class="blue">nanobind</i>:</li>
           <ul>
-        <li><strong>pybind11:</strong> Lightweight, header-only library for C++ bindings, but lacks Qt-specific features.</li>
-        <li><strong>Boost.Python:</strong> Comprehensive but outdated and heavy; less commonly used today.</li>
-        <li><strong>nanobind:</strong> Modern alternative to pybind11, optimized for performance but not Qt-focused.</li>
-        <li><strong>SIP:</strong> Used by PyQt, tightly integrated but less flexible than Shiboken for large frameworks like Qt.</li>
-          </ul>
-          <li>Highlight Shiboken's unique advantages for Qt:</li>
-          <ul>
-        <li>Specifically designed for Qt's complex APIs.</li>
-        <li>Non-intrusive: No need to modify Qt's source code.</li>
-        <li>Seamless integration with PySide6 and QML.</li>
+        <li class="fragment">Automated binding generation</li>
+        <li class="fragment">Type system customization</li>
+        <li class="fragment">Smart pointer handling</li>
+        <li class="fragment">Container conversion</li>
           </ul>
         </ul>
+       <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">Learn more about Shiboken - https://doc.qt.io/qtforpython-6/shiboken6</a>
+        </p>
         <aside class="notes">
-          - Discuss the strengths and weaknesses of other binding tools like pybind11, Boost.Python, nanobind, and SIP.
-          - Emphasize why Shiboken is the best choice for Qt developers.
+          - Introduce Shiboken as Qt's binding generation tool
+          - Highlight its role in PySide6
+          - Emphasize its automated approach to binding generation
+          - Compare its features with pybind11 and nanobind
+          - Provide a link to the official Shiboken documentation
         </aside>
       </section>
 
-      <!-- Slide: Expanding Beyond Python -->
       <section data-transition="slide-in fade-out">
-        <h2>Beyond <i class="qt-green">Python</i> 🌟</h2>
-        <ul>
-          <li>We spent years perfecting Python bindings for Qt, providing features outside the Qt-API (e.g., _feature__, QtAsyncIO, etc.).</li>
-          <li>Does it make sense to continue this approach for other languages?</li>
-          <li>Reducing the scope and trying new approaches could be key to easily expose other languages to the Qt ecosystem.</li>
-          <li>Highlight the QMetaObjectBuilder functionality as a flexible path forward.</li>
-        </ul>
+        <h2>The <i class="qt-green">Shiboken</i> Advantage 🎯</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <h3 style="font-size: 80%;">Traditional Approaches</h3>
+            <ul>
+              <li class="fragment" style="color: #FF4444;">
+                ❌ Modify source code. <span style="color: #fefefe;">(e.g., SWIG, JNI, etc.)</span>
+              </li>
+              <li class="fragment" style="color: #FF4444;">❌ Manual binding maintenance</li>
+              <li class="fragment" style="color: #FF4444;">❌ Framework-agnostic solutions</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size: 80%;">Shiboken's Way</h3>
+            <ul>
+              <li class="fragment" style="color: #41CD52;">✅ Non-intrusive binding generation</li>
+              <li class="fragment" style="color: #41CD52;">✅ Automated updates with Qt releases</li>
+              <li class="fragment" style="color: #41CD52;">✅ Qt-specific optimizations</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          - JNI requires modifying C++ code with special JNI macros and types
+          - Python/C API requires extensive boilerplate in C code
+          - SWIG needs special directives in source files
+          - Emphasize the importance of not modifying Qt's source code
+          - Highlight automation benefits for large frameworks
+        </aside>
       </section>
 
-      <!-- Slide: The Future: QML Bridges -->
+      <section data-transition="slide-in fade-out">
+        <h4>Custom Python Bindings (without Qt)</h4>
+        <div id="left">
+          <p style="font-size: 70%;">Generating Python bindings<br/> from a C++ <i class="blue">library</i>.</p>
+          <ul style="font-size: 70%;">
+            <li><i class="blue">Library</i> files:</li>
+            <ul>
+              <li><code>CMakeLists.txt</code></li>
+              <li><code>icecream.cpp</code></li>
+              <li><code>icecream.h</code></li>
+              <li><code>truck.cpp</code></li>
+              <li><code>truck.h</code></li>
+            </ul>
+            <li><i class="qt-neon">Shiboken</i> files:</li>
+            <ul>
+              <li><code>bindings.h</code> <i class="qt-lemon">(right top)</i></li>
+              <li><code>bindings.xml</code> <i class="qt-lemon">(right bottom)</i></li>
+            </ul>
+          </ul>
+          <p style="font-size: 35%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/samplebinding">samplebinding</a> example</p>
+        </div>
+        <div id="rightl" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+          <pre style="width: 90%; font-size: 20%; margin: 0;"><code class="c++" data-trim data-noescape>
+      #ifndef BINDINGS_H
+      #define BINDINGS_H
+
+      #include "icecream.h"
+      #include "truck.h"
+
+      #endif // BINDINGS_H</code></pre>
+          <xmp style="width: 90%; font-size: 20%; margin: 0; background: #3f3f3f;">
+       <typesystem package="Universe">
+
+   <primitive-type name="bool"/>
+   <primitive-type name="std::string"/>
+
+   <object-type name="Icecream">
+     <modify-function signature="clone()">
+       <modify-argument index="0">
+         <define-ownership owner="c++"/>
+       </modify-argument>
+     </modify-function>
+   </object-type>
+
+   <value-type name="Truck">
+     <!-- Same ownership caveat applies here. -->
+     <modify-function signature="addIcecreamFlavor(Icecream*)">
+       <modify-argument index="1">
+         <define-ownership owner="c++"/>
+       </modify-argument>
+     </modify-function>
+   </value-type>
+
+ </typesystem>
+</xmp>
+        </div>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h4>Custom Python Bindings (with Qt)</h4>
+        <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
+          <div id="left70" style="flex: 1;">
+            <p style="font-size: 50%;">Simple typesystem</p>
+            <xmp style="margin-left: 0; width: 100%; font-size: 35%; background: #3f3f3f; padding: 10px;">
+      <typesystem package="wiggly">
+        <load-typesystem name="typesystem_widgets.xml" generate="no"/>
+        <object-type name="WigglyWidget"/>
+      </typesystem>
+            </xmp>
+            <p style="font-size: 50%;">Python usage</p>
+            <pre style="font-size: 35%; width: 100%;"><code class="python" data-trim data-noescape>
+      from wiggly import WigglyWidget as WigglyWidgetCPP
+      from wigglywidget import WigglyWidget as WigglyWidgetPY
+
+      # ...
+      wiggly_widget_py = WigglyWidgetPY(self)
+      wiggly_widget_cpp = WigglyWidgetCPP(self)
+      # ...
+      layout.addWidget(wiggly_widget_py)
+      layout.addWidget(wiggly_widget_cpp)
+            </code></pre>
+            <p style="font-size: 40%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/widgetbinding">widgetbinding</a> example</p>
+          </div>
+          <div id="right30" style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <img src="img/widgetbinding.gif" style="max-width: 100%; height: auto;" />
+            <ul style="font-size: 60%; text-align: center; margin-top: 10px;">
+              <li><i class="qt-neon">Top:</i> Widget written in Python</li>
+              <li><i class="qt-neon">Bottom:</i> Widget written in C++ (exposed to Python)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h4>Hybrid Applications (Python and C++)</h4>
+        <p style="font-size: 80%;">Embedding <i class="qt-lemon">Python</i> into a <i class="qt-neon">Qt/C++</i> application</p>
+        <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
+        <p style="font-size: 50%;">The Text editor interprets Python code to <i class="qt-mandarin">access</i> the Qt/C++ application to <i class="qt-mandarin">modify it</i>.</p>
+        <p style="font-size: 60%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication">scriptableapplication</a> example</p>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h4>Shiboken: A Decade of Evolution 🎂</h4>
+        <ul>
+          <li class="fragment">
+            <i class="qt-green">10 years</i> of making C++ ❤️ Python
+          </li>
+          <li class="fragment">
+            Advanced C++ features supported 💪
+            <ul>
+              <li>Smart pointers</li>
+              <li>Containers</li>
+              <li>Modern C++ types</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            But... creating language binding tools is hard! 😅
+          </li>
+          <li class="fragment">
+            Time to explore <i class="qt-yellow">Option 3</i>
+          </li>
+        </ul>
+        <aside class="notes">
+          - Celebrate Shiboken's decade-long journey
+          - Highlight technical achievements
+          - Provide documentation reference
+          - Lead into QML Bridges discussion
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>The Path <i class="qt-green">Forward</i> 🛣️</h2>
+        <ul>
+          <li class="fragment">
+            <strong>Option 1:</strong> Rewrite Qt in new languages
+            <ul>
+              <li style="color: #FF4444;">❌ Massive effort</li>
+              <li style="color: #FF4444;">❌ Loss of maturity</li>
+              <li style="color: #FF4444;">❌ Fragmentation risk</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <strong>Option 2:</strong> Create language bindings for Qt
+            <ul>
+              <li style="color: #41CD52;">✅ Preserve Qt's maturity</li>
+              <li style="color: #41CD52;">✅ Incremental adoption</li>
+              <li style="color: #41CD52;">✅ Proven approach (PySide6)</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <strong>Option 3:</strong> Unified frontend, multiple backends
+            <ul>
+              <li>QML as the universal frontend</li>
+              <li>Simplified backend integration</li>
+              <li>Lower entry barrier</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="yellow">We are working on a new approach to simplify multi-language integration...</i>
+        </p>
+      </section>
+
       <section data-transition="slide-in fade-out">
         <h2>The Future: <i class="yellow">QML Bridges</i> 🌉</h2>
         <ul>
-          <li>QML Bridges aim to simplify multi-language integration with QML.</li>
-          <li>Reduce boilerplate code and improve performance.</li>
-          <li>Potential for supporting multiple languages beyond Python.</li>
+          <li>Add 3-4 slides with example without using the QMLNext or QMLBridges name</li>
         </ul>
         <aside class="notes">
           - Introduce QML Bridges and their potential to revolutionize Qt development.
         </aside>
       </section>
 
-      <!-- Slide: Bridging C++ and QML with Python: A Recap -->
-      <section data-transition="slide-in fade-out">
+      <!-- <section data-transition="slide-in fade-out">
         <h2>Recap & <i class="blue">Next Steps</i> 📝</h2>
         <ul>
           <li>The value of language bindings in Qt.</li>
@@ -326,9 +456,8 @@
         <aside class="notes">
           - Summarize the key points and end with a call to action: "Explore PySide6 today and stay tuned for QML Bridges!"
         </aside>
-      </section>
+      </section> -->
 
-      <!-- Slide: Questions and Discussion -->
       <section data-transition="slide-in fade-out">
         <h2>Questions & <i class="qt-green">Discussion</i> ❓</h2>
         <ul>

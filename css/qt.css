@@ -206,3 +206,9 @@ a {
 .reveal .slides section h2 {
   margin-bottom: 10px; /* Reduce space below the title */
 }
+
+/* Force a full slide background color */
+.reveal .backgrounds,
+.reveal .slides section:not([data-background-image]) {
+  background-color: #0C2127 !important;
+}

@@ -30,23 +30,18 @@
   <div class="reveal">
     <div class="slides">
       <!--***************************************************************************-->
-      <section data-transition="slide-in fade-out">
-        <div id="left">
-          <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond 🚀</h3>
-          <hr style="width: 70px; border: 1px solid #306998; background-color: #306998; margin-left: 0px;"/>
-          <p style="font-size: 80%;">
-            <i class="qt-green">Shyamnath</i> Premnadh<br/>
-            Qt World Summit 2025<br/>
-            April 23, 2025
+      <section data-background-image="img/ws_front_1.jpg" data-transition="slide-in fade-out">
+        <div id="left70">
+          <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond</h3>
+          <hr class="qt-line" style="border: 2px solid #41CD52; width: 50%; margin: 10px 0;" />
+          <p class="x80">
+          <i class="qt-green">Shyamnath</i> Premnadh<br/>
+          Staff Software Engineer, Qt for Python<br/>
           </p>
         </div>
-        <div id="right30">
-          <img style="width: 80%; margin-right: 50px;" src="img/python.svg" />
-          <img style="width: 80%; margin-right: 50px;" src="img/qt_logo.webp" />
-        </div>
         <aside class="notes">
-          - Introduction to the topic: Bridging C++ and QML with Python.
-          - Overview of the tools and frameworks involved: Shiboken, PySide6, and QML.
+            - Introduction to the topic: Bridging C++ and QML with Python.
+            - Overview of the tools and frameworks involved: Shiboken, PySide6, and QML.
         </aside>
       </section>
       <!--***************************************************************************-->
@@ -83,8 +78,7 @@
           <li>Adaptability to modern trends 🌍</li>
         </ul>
         <aside class="notes">
-          - Discuss these universal factors for framework success.
-          - Lead into the next slide by asking how Qt aligns with these ingredients.
+          - Highlight that our talk will concern more towards Developer satisfaction and ease of use.
         </aside>
       </section>
 
@@ -367,6 +361,66 @@
       </section>
 
       <section data-transition="slide-in fade-out">
+        <h4>Shiboken Wizard 🧙‍♂️</h4>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <div style="text-align: center;">
+            <p style="font-size: 80%;">A visual tool to create Python bindings for C++ libraries</p>
+          </div>
+          <ul>
+            <li class="fragment">
+              Visual editor for <i class="qt-green">typesystem XML</i> files 🎨
+            </li>
+            <li class="fragment">
+              No Shiboken expertise required 🚀
+            </li>
+          </ul>
+        </div>
+        <aside class="notes">
+          - Introduce Shiboken Wizard as a visual binding generator
+          - Emphasize how it simplifies the binding creation process
+          - Mention it's perfect for developers new to Shiboken
+        </aside>
+      </section>
+
+            <!-- First slide -->
+      <section data-auto-animate data-transition="slide-in fade-out">
+        <h4>See it in Action 🎥</h4>
+        <div class="fragment" style="width: 80%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+          <p style="color: #666;">Demo video coming soon...</p>
+        </div>
+        <p class="fragment" style="font-size: 70%; text-align: center;">
+          Want to learn more? Watch our detailed guide:<br/>
+          <a href="https://youtu.be/RUwV_sx_gBM?si=BTQ_NWHZAPjSr1yY" target="_blank" style="color: #41CD52; text-decoration: none;">
+            ▶️ Shiboken Wizard Tutorial
+          </a>
+        </p>
+      </section>
+
+      <section data-auto-animate data-transition="slide-in fade-out">
+        <h4>See it in Action 🎥</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div style="width: 100%; aspect-ratio: 16/9; background: rgba(43, 43, 43, 0.8); backdrop-filter: blur(4px); display: flex; justify-content: center; align-items: center; border-radius: 8px;">
+              <p style="color: #666;">Demo video coming soon...</p>
+            </div>
+          </div>
+          <!-- Right side - YouTube embed -->
+          <div class="fragment">
+            <iframe
+              width="500"
+              height="281"
+              src="https://www.youtube.com/embed/RUwV_sx_gBM"
+              title="Shiboken Wizard Tutorial"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="max-width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section data-transition="slide-in fade-out">
         <h4>Hybrid Applications (Python and C++)</h4>
         <p style="font-size: 80%;">Embedding <i class="qt-lemon">Python</i> into a <i class="qt-neon">Qt/C++</i> application</p>
         <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
@@ -375,10 +429,10 @@
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h4>Shiboken: A Decade of Evolution 🎂</h4>
+        <h4>Shiboken: More than a Decade of Evolution 🎂</h4>
         <ul>
           <li class="fragment">
-            <i class="qt-green">10 years</i> of making C++ ❤️ Python
+            More than <i class="qt-green">10 years</i> of making C++ ❤️ Python
           </li>
           <li class="fragment">
             Advanced C++ features supported 💪
@@ -396,6 +450,7 @@
           </li>
         </ul>
         <aside class="notes">
+          - Check with Cristian
           - Celebrate Shiboken's decade-long journey
           - Highlight technical achievements
           - Provide documentation reference
@@ -437,35 +492,148 @@
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>The Future: <i class="yellow">QML Bridges</i> 🌉</h2>
+        <h2>The Future of <i class="qt-green">QtQuick Development</i> 🌟</h2>
         <ul>
-          <li>Add 3-4 slides with example without using the QMLNext or QMLBridges name</li>
+          <li class="fragment">
+            Making <i class="qt-yellow">QtQuick</i> feel native in every language 🎯
+          </li>
+          <li class="fragment">
+            No more wrestling with:
+            <ul>
+              <li>Complex signal-slot connections 🔌</li>
+              <li>Property system intricacies 🔧</li>
+              <li>Qt-specific patterns 📚</li>
+            </ul>
+          </li>
+          <li class="fragment">Write backend code in your preferred language:
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px;">
+              <span class="fragment">Python 🐍</span>
+              <span class="fragment">Rust 🦀</span>
+              <span class="fragment">Java ☕</span>
+              <span class="fragment">Kotlin 🧩</span>
+              <span class="fragment">C# ⚙️</span>
+              <span class="fragment">Swift 🍎</span>
+            </div>
+          </li>
         </ul>
         <aside class="notes">
-          - Introduce QML Bridges and their potential to revolutionize Qt development.
+          - Emphasize the vision of making QtQuick more accessible
+          - Highlight how we're removing traditional Qt complexity
+          - Show the broad language support planned
+          - Build anticipation for the technical details
         </aside>
       </section>
 
-      <!-- <section data-transition="slide-in fade-out">
-        <h2>Recap & <i class="blue">Next Steps</i> 📝</h2>
+      <section data-transition="slide-in fade-out">
+        <h2>Python <i class="qt-green">Use Cases</i> 🐍</h2>
         <ul>
-          <li>The value of language bindings in Qt.</li>
-          <li>How Shiboken powers PySide6 and enables Python-QML integration.</li>
-          <li>The promise of QML Bridges for the future.</li>
+          <li class="fragment">
+            Expose Python classes to QtQuick:
+            <ul>
+              <li>Data classes without Qt decorators 📦</li>
+              <li>Data models without inheriting Qt classes 📊</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            Seamless integration:
+            <ul>
+              <li>No <code>@QmlElement</code>, <code>@Signal</code>, <code>@Slot</code> required 🎯</li>
+              <li>No <code>@Property</code> decorators needed 🔄</li>
+              <li>Pure Python code stays pure ✨</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            Automatic conversions:
+            <ul>
+              <li>Python data types ↔️ QtQuick types</li>
+              <li>Lists and dictionaries support 📝</li>
+              <li>Custom data models for views 📊</li>
+            </ul>
+          </li>
         </ul>
         <aside class="notes">
-          - Summarize the key points and end with a call to action: "Explore PySide6 today and stay tuned for QML Bridges!"
+          - Highlight how Python classes can be used directly without Qt modifications
+          - Emphasize the removal of Qt-specific decorators
+          - Explain automatic type conversion between Python and QtQuick
+          - Mention data model support for QtQuick views
+          - Build anticipation for the technical demo
         </aside>
-      </section> -->
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Simplified <i class="qt-green">Python</i> Integration 🐍</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <p class="fragment" style="font-size: 80%;">Write natural Python code:</p>
+            <pre class="fragment"><code class="python" data-trim data-noescape>
+      class StringModel:
+          def __init__(self):
+              self._text = ""
+
+          def add_string(self, new_string: str) -> bool:
+              # Simple string manipulation
+              print(f"Added: {new_string}")
+              self._text = new_string
+              return True
+
+      # Register with QML
+      string_model = StringModel()
+      AutoQmlBridge(string_model)</code></pre>
+          </div>
+          <div>
+            <p class="fragment" style="font-size: 80%;">Use it directly in QML:</p>
+            <pre class="fragment"><code class="qml" data-trim data-noescape>
+      import QtQuick
+      import QtQuick.Controls
+      import backend 1.0
+
+      Column {
+          spacing: 20
+
+          TextField {
+              id: inputField
+              placeholderText: "Enter text"
+          }
+
+          Button {
+              text: "Add String"
+              onClicked: {
+                  StringModel.add_string(inputField.text)
+              }
+          }
+      }</code></pre>
+          </div>
+        </div>
+        <aside class="notes">
+          - Show how Python code remains Pythonic without Qt decorators
+          - Demonstrate automatic method and property conversion
+          - Highlight the seamless QML integration
+          - Emphasize the simplicity of the API
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Technology <i class="qt-green">Preview</i> 🎥</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <div class="fragment" style="width: 80%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center;">
+            <p style="color: #666;">Demo video coming soon...</p>
+          </div>
+          <p class="fragment" style="font-size: 80%; margin-top: 20px;">
+            Stay tuned for more updates on this exciting development! 🚀
+          </p>
+        </div>
+        <aside class="notes">
+          - Show a live demo of the QMLBridges with a slot
+          - Highlight the simplicity and power of the approach
+          - Build excitement for the future release
+        </aside>
+      </section>
 
       <section data-transition="slide-in fade-out">
         <h2>Questions & <i class="qt-green">Discussion</i> ❓</h2>
         <ul>
           <li>Feel free to ask questions or share your thoughts!</li>
         </ul>
-        <aside class="notes">
-          - Invite the audience to ask questions or dive deeper into specific topics.
-        </aside>
       </section>
     </div>
   </div>

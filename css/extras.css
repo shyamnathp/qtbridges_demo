@@ -38,30 +38,30 @@ a.url:before { font-family: monospace; content: attr(href); }
 .type1
 {
 	border-color: #E76F51;
-	background-color: rgba(231, 111, 81, 0.1); 
+	background-color: rgba(231, 111, 81, 0.1);
 }
 
 .type2
 {
 	border-color: #2A9D8F;
-	background-color: rgba(42, 157, 143, 0.1); 
+	background-color: rgba(42, 157, 143, 0.1);
 }
 
 .type3
 {
 	border-color: #0096C7;
-	background-color: rgba(0, 150, 199, 0.1); 
+	background-color: rgba(0, 150, 199, 0.1);
 }
 
 .type4
 {
 	border-color: #00B353;
-	background-color: rgba(0, 179, 83, 0.1); 
+	background-color: rgba(0, 179, 83, 0.1);
 }
 
 .picture
 {
-	width: 15px; 
+	width: 15px;
 	padding-right: 10px;
 }
 
@@ -70,4 +70,17 @@ a.url:before { font-family: monospace; content: attr(href); }
   position: relative;
   left: 44%;
   margin: 0 !important;
+}
+
+.blur-text {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.reveal .slides section .fragment.blur-in {
+  filter: blur(5px);
+}
+
+.reveal .slides section .fragment.blur-in.visible {
+  filter: blur(0);
 }

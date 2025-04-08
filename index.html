@@ -48,7 +48,6 @@
       <section data-transition="slide-in fade-out">
         <h2>Building on Qt WS 2023's <i class="qt-green">Insights</i> 🌟</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-          <!-- Move iframe up by placing it first in the left column -->
           <div>
             <iframe
               width="560"
@@ -60,7 +59,6 @@
               allowfullscreen>
             </iframe>
           </div>
-          <!-- Right column with Cristian's talk points -->
           <div>
             <p style="font-size: 90%;">
               <i class="qt-green">Cristian Maureira-Fredes'</i> vision from QtWS 2023:
@@ -201,7 +199,7 @@
           </div>
           <div class="fragment">
             <h3 style="font-size: 80%;">Developer Interest Growing 📈</h3>
-            <div class="chart-container" style="position: relative; height: 400px;">
+            <div class="chart-container" style="position: relative; height: 15vh; width: 100%">
               <canvas id="qtGrowthChart"></canvas>
             </div>
             <p style="font-size: 70%; text-align: center; margin-top: 10px;">
@@ -750,7 +748,11 @@
     Reveal.initialize({
       hash: true,
       transitionSpeed: 'fast',
-
+      width: 960, // Default slide width
+      height: 700, // Default slide height
+      margin: 0.1, // Margin around the content
+      minScale: 0.5, // Minimum scaling factor
+      maxScale: 2.0, // Maximum scaling factor
       // Learn about plugins: https://revealjs.com/plugins/
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
     });
@@ -774,6 +776,14 @@
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        layout: {
+          padding: {
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20
+          }
+        },
         plugins: {
           title: {
             display: false

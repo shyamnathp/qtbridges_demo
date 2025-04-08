@@ -272,3 +272,48 @@ a {
 .reveal .slides section:not([data-background-image]) {
   background-color: #0C2127 !important;
 }
+
+/* Responsive font sizes */
+h1, h2, h3 {
+  font-size: clamp(2rem, 5vw, 4rem); /* Scales between 2rem and 4rem based on screen size */
+}
+
+p, li {
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Scales between 1rem and 1.5rem */
+}
+
+/* Ensure videos and images are responsive */
+iframe, img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9; /* Maintain aspect ratio for videos */
+}
+
+/* For smaller screens (e.g., laptops) */
+@media (max-width: 1024px) {
+  h1, h2, h3 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  p, li {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+}
+
+/* For very small screens (e.g., phones) */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+  }
+
+  p, li {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+  }
+}
+
+pre {
+  overflow-x: auto;
+  font-size: 70%; /* Adjust font size for better fit */
+  white-space: pre-wrap; /* Wrap long lines if necessary */
+  word-wrap: break-word; /* Break long words */
+}

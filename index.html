@@ -408,25 +408,27 @@
         <h4>Shiboken Wizard 🧙‍♂️</h4>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
           <div style="text-align: center;">
-            <p style="font-size: 80%;">A visual tool to create Python bindings for C++ libraries</p>
+        <p style="font-size: 80%;">A visual tool to create Python bindings for C++ libraries</p>
           </div>
           <ul>
-            <li class="fragment">
-              Visual editor for <i class="qt-green">typesystem XML</i> files 🎨
-            </li>
-            <li class="fragment">
-              No Shiboken expertise required 🚀
-            </li>
+        <li class="fragment">
+          Visual editor for <i class="qt-green">typesystem XML</i> files 🎨
+        </li>
+        <li class="fragment">
+          No Shiboken expertise required 🚀
+        </li>
+        <li class="fragment">
+          Available as a <i class="qt-yellow">commercial-only</i> tool 💼
+        </li>
           </ul>
         </div>
         <aside class="notes">
           - Introduce Shiboken Wizard as a visual binding generator
           - Emphasize how it simplifies the binding creation process
           - Mention it's perfect for developers new to Shiboken
+          - Highlight that it is available only in the commercial version
         </aside>
       </section>
-
-            <!-- First slide -->
       <section data-auto-animate data-transition="slide-in fade-out">
         <h4>See it in Action 🎥</h4>
         <div class="fragment" style="width: 100%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
@@ -635,10 +637,11 @@
 
       <section data-transition="slide-in fade-out">
         <h2>Simplified <i class="qt-green">Python</i> Integration 🐍</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+          <!-- Left column -->
           <div>
-            <p class="fragment" style="font-size: 80%;">Write natural Python code:</p>
-            <pre class="fragment"><code class="python" data-trim data-noescape>
+            <p id="left" class="fragment" style="font-size: 70%;">Write natural Python code:</p>
+            <pre class="fragment" style="font-size: 40%;"><code class="python" data-trim data-noescape>
       class StringModel:
           def __init__(self):
               self._text = ""
@@ -653,36 +656,28 @@
       string_model = StringModel()
       AutoQmlBridge(string_model)</code></pre>
           </div>
+
+          <!-- Right column -->
           <div>
-            <p class="fragment" style="font-size: 80%;">Use it directly in QML:</p>
-            <pre class="fragment"><code class="qml" data-trim data-noescape>
+            <p id="left" class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
+            <pre class="fragment" style="font-size: 40%;"><code class="qml" data-trim data-noescape>
       import QtQuick
       import QtQuick.Controls
       import backend 1.0
 
       Column {
           spacing: 20
-
           TextField {
               id: inputField
               placeholderText: "Enter text"
           }
-
           Button {
               text: "Add String"
-              onClicked: {
-                  StringModel.add_string(inputField.text)
-              }
+              onClicked: StringModel.add_string(inputField.text)
           }
       }</code></pre>
           </div>
         </div>
-        <aside class="notes">
-          - Show how Python code remains Pythonic without Qt decorators
-          - Demonstrate automatic method and property conversion
-          - Highlight the seamless QML integration
-          - Emphasize the simplicity of the API
-        </aside>
       </section>
 
       <section data-transition="slide-in fade-out">

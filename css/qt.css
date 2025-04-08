@@ -1,3 +1,23 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --qt-neon: #2CDE85;
+  --qt-pine: #00414A;
+  --qt-lemon: #DBEB00;
+  --qt-moss: #373F26;
+  --qt-violet: #CDB0FF;
+  --qt-midnight: #27138B;
+  --qt-mandarin: #FFA615;
+  --qt-burgundy: #5F002D;
+  --python-blue: #1e405d;
+  /*--rust-red: #ef4a00;*/
+  --rust-red: #a72145;
+  --zig-yellow: #ef9f1c;
+  --zig-black: #111111;
+  --carbon-gray: #353535;
+}
+
+
 #header-left {
   position: absolute;
   top: 0%;
@@ -166,6 +186,46 @@
 
 .qt-yellow {
   color: #ffff00;
+  font-style: normal;
+}
+
+.qt-neon {
+  color: var(--qt-neon);
+  font-style: normal;
+}
+
+.qt-pine {
+  color: var(--qt-pine);
+  font-style: normal;
+}
+
+.qt-violet {
+  color: var(--qt-violet);
+  font-style: normal;
+}
+
+.qt-lemon {
+  color: var(--qt-lemon);
+  font-style: normal;
+}
+
+.qt-moss {
+  color: var(--qt-moss);
+  font-style: normal;
+}
+
+.qt-midnight {
+  color: var(--qt-midnight);
+  font-style: normal;
+}
+
+.qt-mandarin {
+  color: var(--qt-mandarin);
+  font-style: normal;
+}
+
+.qt-burgundy {
+  color: var(--qt-burgundy);
   font-style: normal;
 }
 

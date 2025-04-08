@@ -333,15 +333,18 @@
           <p style="font-size: 35%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/samplebinding">samplebinding</a> example</p>
         </div>
         <div id="rightl" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
-          <pre style="width: 90%; font-size: 20%; margin: 0;"><code class="c++" data-trim data-noescape>
-      #ifndef BINDINGS_H
-      #define BINDINGS_H
+          <pre style="width: 100%; max-width: 100%; font-size: 30%; margin: 0; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; box-sizing: border-box;">
+            <code class="c++" data-trim data-noescape>
+          #ifndef BINDINGS_H
+          #define BINDINGS_H
 
-      #include "icecream.h"
-      #include "truck.h"
+          #include "icecream.h"
+          #include "truck.h"
 
-      #endif // BINDINGS_H</code></pre>
-          <xmp style="width: 90%; font-size: 20%; margin: 0; background: #3f3f3f;">
+          #endif // BINDINGS_H
+            </code>
+          </pre>
+          <xmp style="width: 100%; font-size: 30%; margin: 0; background: #3f3f3f;">
        <typesystem package="Universe">
 
    <primitive-type name="bool"/>
@@ -596,6 +599,39 @@
           - Highlight how we're removing traditional Qt complexity
           - Show the broad language support planned
           - Build anticipation for the technical details
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Why These <i class="qt-green">Languages</i>? 🤔</h2>
+        <ul>
+          <li class="fragment">
+            <i class="qt-yellow">Python</i> 🐍
+            <ul>
+              <li>Already proven with PySide6</li>
+              <li>Large data science & ML community</li>
+              <li>Rapid prototyping capabilities</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <i class="qt-yellow">Rust</i> & <i class="qt-yellow">Swift</i> 🦀 🍎
+            <ul>
+              <li>Strong memory safety guarantees</li>
+              <li>Growing systems programming adoption</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <i class="qt-yellow">Java</i>, <i class="qt-yellow">Kotlin</i> & <i class="qt-yellow">C#</i> ☕ 🧩 ⚙️
+            <ul>
+              <li>Why? - for Cristian</li>
+            </ul>
+          </li>
+        </ul>
+        <aside class="notes">
+          - Python: Highlight existing success with PySide6 and its popularity in data science
+          - Rust/Swift: Emphasize modern systems programming and mobile development
+          - Java/Kotlin/C#: Focus on enterprise adoption and mature ecosystems
+          - Overall: Show how each language brings unique strengths to Qt
         </aside>
       </section>
 

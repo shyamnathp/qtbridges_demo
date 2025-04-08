@@ -46,6 +46,53 @@
       <!--***************************************************************************-->
 
       <section data-transition="slide-in fade-out">
+        <h2>Building on Qt WS 2023's <i class="qt-green">Insights</i> 🌟</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+          <!-- Move iframe up by placing it first in the left column -->
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SKIU4gLLooA"
+              title="The Role of Language Bindings in the Future of the Qt Ecosystem"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <!-- Right column with Cristian's talk points -->
+          <div>
+            <p style="font-size: 90%;">
+              <i class="qt-green">Cristian Maureira-Fredes'</i> vision from QtWS 2023:
+            </p>
+            <ul style="font-size: 80%;">
+              <li class="fragment">The impact of bindings in Qt's ecosystem</li>
+              <li class="fragment">Qt and Python's parallel evolution</li>
+              <li class="fragment">Future possibilities with Rust and Carbon</li>
+            </ul>
+            <p class="fragment" style="font-size: 90%; margin-top: 20px;">
+              <i class="qt-yellow">Were you at last year's talk?</i> 🤔
+            </p>
+          </div>
+        </div>
+        <aside class="notes">
+          - Cristian's talk:
+            * Explored multiple languages (Python, Rust, Carbon, Zig)
+            * Showed an insight into the benefits and strengths of different languages
+            * Set the theoretical foundation and power shift to the importance of multiple language
+
+          - My talk:
+            * Build on the theroretical foundation to show the practical path forward
+            * Shows working prototype using QMetaObjectBuilder
+            * Demonstrates simplified language integration
+
+          - Key transition:
+            * From "what could be possible" to "here's how we're doing it"
+            * From exploration to implementation
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
         <h2>What Makes a Framework <i class="blue">Successful?</i> 🤔</h2>
         <aside class="notes">
           - Ask the audience to think about what makes a framework stand out.
@@ -384,15 +431,9 @@
             <!-- First slide -->
       <section data-auto-animate data-transition="slide-in fade-out">
         <h4>See it in Action 🎥</h4>
-        <div class="fragment" style="width: 80%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+        <div class="fragment" style="width: 100%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
           <p style="color: #666;">Demo video coming soon...</p>
         </div>
-        <p class="fragment" style="font-size: 70%; text-align: center;">
-          Want to learn more? Watch our detailed guide:<br/>
-          <a href="https://youtu.be/RUwV_sx_gBM?si=BTQ_NWHZAPjSr1yY" target="_blank" style="color: #41CD52; text-decoration: none;">
-            ▶️ Shiboken Wizard Tutorial
-          </a>
-        </p>
       </section>
 
       <section data-auto-animate data-transition="slide-in fade-out">
@@ -454,6 +495,41 @@
           - Highlight technical achievements
           - Provide documentation reference
           - Lead into QML Bridges discussion
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Expanding Beyond <i class="qt-green">Python</i> 🌍</h2>
+        <ul>
+          <li class="fragment">
+            Years of effort to build reliable bindings for Python:
+            <ul>
+              <li><span style="color: #FFD43B;">__feature__</span>: Modern Python patterns</li>
+              <li><span style="color: #41CD52;">snake_case</span>: Pythonic method aliases</li>
+              <li><span style="color: #306998;">QtAsyncIO</span>: Async/await support</li>
+              <li>
+            </ul>
+          </li>
+          <li class="fragment">
+            Does it make sense to replicate this for other languages? 🤔
+          </li>
+          <li class="fragment">
+            A new approach:
+            <ul>
+              <li>Reduce scope and focus on simplicity</li>
+              <li>Leverage <span style="color: #41CD52;">QMetaObjectBuilder</span> for dynamic integration</li>
+              <li>Expose Qt to other languages with minimal effort</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="qt-yellow">Time to explore Option 3</i> 🚀
+        </p>
+        <aside class="notes">
+          - Highlight the Python-specific features we've added over the years.
+          - Pose the question: Should we replicate this for other languages?
+          - Introduce the idea of reducing scope and using QMetaObjectBuilder for simpler integration.
+          - Transition to Option 3 as the next step.
         </aside>
       </section>
 
@@ -656,13 +732,25 @@
         </aside>
       </section>
 
-      <section data-background-image="img/ws_last.jpg" data-transition="slide-in fade-out" style="position: relative;">
-        <div style="position: absolute; top: -500%; left: -35%; font-size: 1vw; color: #ffffff;">
-          <p><i class="qt-green">Shyamnath</i> Premnadh<br/>Shyamnath.Premnadh@qt.io</p>
+      <section data-background-image="img/ws_last.jpg" data-transition="slide-in fade-out">
+        <!-- Left content -->
+        <div id="left" style="margin-left: -35%; text-align: left; width: 50%; float: left;">
+          <h4>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond</h4>
+          <hr class="qt-line"/>
+          <p class="x80" style="font-size: 60%;">
+            <i class="qt-green">Shyamnath</i> Premnadh<br>
+            Staff Software Engineer, Qt for Python<br/>
+            <span class="qt-neon">shyamnath.premnadh@qt.io</span><br/>
+          </p>
+          <p style="font-size: 80%; margin-top: 10px;">
+            Slides: <a href="https://shyamnathp.github.io/qt_ws_2025/">qtinfo.dev/qtws25</a>
+          </p>
         </div>
-        <h2 style="text-align: center; margin-left: -10%; font-size: 1.5vw;">
-          Questions & <i class="qt-lemon">Discussion</i> ❓
-        </h2>
+
+        <!-- Right content - Q&A -->
+        <div style="width: 40%; float: right; text-align: center;">
+          <h1 style="font-size: 300%;"><i class="qt-neon">Q&A</i></h1>
+        </div>
       </section>
     </div>
   </div>

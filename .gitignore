@@ -42,3 +42,19 @@ css/*.css.map
 # Exclude Reveal.js build artifacts
 reveal.js/node_modules/
 reveal.js/dist/
+
+// ...existing code...
+
+# Python virtual environments
+venv/
+.venv/
+*venv/
+.virtualenv/
+ENV/
+env/
+*env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class

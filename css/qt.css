@@ -258,7 +258,7 @@ a {
 /* Style for slide content */
 .reveal .slides section ul,
 .reveal .slides section p {
-  font-size: 80%; /* Decrease font size */
+  font-size: 100%; /* Decrease font size */
   margin-left: 20px; /* Align relative to the title */
 }
 
@@ -273,14 +273,6 @@ a {
   background-color: #0C2127 !important;
 }
 
-/* Responsive font sizes */
-h1, h2, h3 {
-  font-size: clamp(2rem, 5vw, 4rem); /* Scales between 2rem and 4rem based on screen size */
-}
-
-p, li {
-  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Scales between 1rem and 1.5rem */
-}
 
 /* Ensure videos and images are responsive */
 iframe, img {

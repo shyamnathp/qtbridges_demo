@@ -63,7 +63,7 @@
   width:50%;
 }
 
-#left70 {
+/* #left70 {
   left:-8.33%;
   text-align: left;
   float: left;
@@ -71,8 +71,18 @@
   z-index:-10;
   margin-left: 2%;
   margin-right: 2%;
+} */
+#left70 {
+  font-size: 33px;
+  left: -8.33%;
+  text-align: left;
+  float: left;
+  width: 642px;
+  z-index: -10;
+  margin-left: 14%;
+  margin-right: 2%;
+  margin-top: 39%;
 }
-
 #right70 {
   left:-8.33%;
   text-align: right;
@@ -259,7 +269,7 @@ a {
 .reveal .slides section ul,
 .reveal .slides section p {
   font-size: 100%; /* Decrease font size */
-  margin-left: 20px; /* Align relative to the title */
+ /*  margin-left: 20px; /* Align relative to the title */
 }
 
 /* Optional: Adjust spacing between title and content */
@@ -279,6 +289,7 @@ iframe, img {
   max-width: 100%;
   height: auto;
   aspect-ratio: 16/9; /* Maintain aspect ratio for videos */
+  margin-top:33px;
 }
 
 /* For smaller screens (e.g., laptops) */
@@ -308,4 +319,7 @@ pre {
   font-size: 70%; /* Adjust font size for better fit */
   white-space: pre-wrap; /* Wrap long lines if necessary */
   word-wrap: break-word; /* Break long words */
+}
+.yt-title {
+  text-align: left;
 }

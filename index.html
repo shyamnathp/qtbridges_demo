@@ -30,228 +30,145 @@
   <div class="reveal">
     <div class="slides">
       <!--***************************************************************************-->
-      <section data-background-image="img/ws_front_1.jpg" data-transition="slide-in fade-out">
-        <!-- <div id="left70" style="margin-top: 40%; margin-left: 15%;">
+      <section data-background-image="img/ws_front_original.jpg" data-transition="slide-in fade-out">
+        <div id="left70" style="margin-top: 40%; margin-left: 15%;">
             <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond 🚀</h3>
           <hr class="qt-line" style="border: 2px solid #41CD52; width: 50%; margin: 10px 0;" />
           <p class="x80">
             <i class="qt-green">Shyamnath</i> Premnadh<br/>
             Staff Software Engineer, Qt for Python<br/>
           </p>
-        </div> -->
+        </div>
         <aside class="notes">
             - to be added
         </aside>
       </section>
       <!--***************************************************************************-->
 
-      <section data-transition="slide-in fade-out">
-        <h2>Building on Qt WS 2023's <i class="qt-green">Insights</i> 🌟</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SKIU4gLLooA"
-              title="The Role of Language Bindings in the Future of the Qt Ecosystem"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div>
-            <p style="font-size: 90%;">
-              <i class="qt-green">Cristian Maureira-Fredes'</i> vision from QtWS 2023:
-            </p>
-            <ul style="font-size: 80%;">
-              <li class="fragment">Multi-language support for modern frameworks</li>
-              <li class="fragment">Benefits and strengths of different languages</li>
-              <li class="fragment">Exploration of Rust, Carbon, Zig and others</li>
-            </ul>
-            <p class="fragment" style="font-size: 90%; margin-top: 20px;">
-              <i class="qt-yellow">Were you at last year's talk?</i> 🤔
-            </p>
-          </div>
-        </div>
-        <aside class="notes">
-          - Cristian's talk:
-            * Explored multiple languages (Python, Rust, Carbon, Zig)
-            * Showed an insight into the benefits and strengths of different languages
-            * Set the theoretical foundation and power shift to the importance of multiple language
-
-          - My talk:
-            * Build on the theroretical foundation to show the practical path forward
-            * Shows working prototype using QMetaObjectBuilder
-            * Demonstrates simplified language integration
-
-          - Key transition:
-            * From "what could be possible" to "here's how we're doing it"
-            * From exploration to implementation
-        </aside>
-      </section>
-
-      <section data-transition="slide-in fade-out">
-        <h2>What Makes a Framework <i class="blue">Successful?</i> 🤔</h2>
-        <aside class="notes">
-          - Ask the audience to think about what makes a framework stand out.
-          - Mention factors like community, features, ease of use, and adaptability.
-          - Set the stage for discussing Qt's position in the modern ecosystem.
-        </aside>
-      </section>
-
       <section data-auto-animate data-transition="slide-in fade-out">
         <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> 🌟</h2>
         <ul>
-          <li class="fragment">A strong and active community 👥</li>
-          <li class="fragment">Technical excellence and reliability ⚡</li>
-          <li class="fragment">Developer satisfaction and ease of use 😊</li>
-          <li class="fragment">Adaptability to modern trends 🌍</li>
+          <li class="fragment fade-in">A strong and active community </li>
+          <li class="fragment fade-in">Technical excellence and reliability </li>
+          <li class="fragment fade-in-then-semi-out">Developer satisfaction and ease of use </li>
+          <li class="fragment fade-in">Adaptability to modern trends </li>
         </ul>
         <aside class="notes">
-          - Discuss these universal factors for framework success.
-          - Lead into the next slide by asking how Qt aligns with these ingredients.
+          - Discuss these universal factors for framework success
+          - Highlight that our talk will focus on Developer satisfaction and ease of use
+          - Lead into the next slide about modern developer expectations
         </aside>
       </section>
 
       <section data-auto-animate data-transition="slide-in fade-out">
         <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> 🌟</h2>
         <ul>
-          <li>A strong and active community 👥</li>
-          <li>Technical excellence and reliability ⚡</li>
-          <li class="qt-green">Developer satisfaction and ease of use 😊</li>
-          <li>Adaptability to modern trends 🌍</li>
+          <li>A strong and active community </li>
+          <li>Technical excellence and reliability </li>
+          <li class="qt-green">Developer satisfaction and ease of use </li>
+          <li>Adaptability to modern trends </li>
         </ul>
         <aside class="notes">
           - Highlight that our talk will concern more towards Developer satisfaction and ease of use.
         </aside>
       </section>
 
-      <section data-transition="slide-in fade-out">
-        <h2>Modern Developer <i class="blue">Expectations</i> & Solutions 🌟</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <div>
-            <h3 style="font-size: 80%;">Expectations</h3>
-            <ul>
-              <li class="fragment">Cross-platform support 🖥️📱🌐</li>
-              <li class="fragment">Rapid development cycles ⚡</li>
-              <li class="fragment">Multi-language support 🔗</li>
-            </ul>
-          </div>
-          <div class="fragment">
-            <h3 style="font-size: 80%;">Modern Solutions</h3>
-            <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-              <img src="img/electro.png" alt="Electron Logo" style="width: 60px; height: auto;">
-              <img src="img/flutter.svg" alt="Flutter Logo" style="width: 60px; height: auto;">
-              <img src="img/tauri.svg" alt="Tauri Logo" style="width: 60px; height: auto;">
-            </div>
-            <ul>
-              <li class="fragment">Modern frontend languages</li>
-              <li class="fragment">Multiple backend options</li>
-              <li class="fragment">Focus on DX 😊</li>
-            </ul>
-          </div>
-        </div>
+      <section data-auto-animate data-transition="slide-in fade-out">
+        <h2>Modern Developer <i class="qt-green">Expectations</i> 🌟</h2>
+        <ul>
+          <li class="fragment">Cross-platform support</li>
+          <li class="fragment">Rapid development cycles</li>
+          <li class="fragment">Multi-language support</li>
+        </ul>
+        <aside class="notes">
+          - Highlight that while C++ remains a cornerstone, new developers are increasingly using languages like Python, Rust, and others.
+          - Emphasize the importance of adapting frameworks to support these languages to stay relevant.
+          - Transition to the next slide to show how multi-language support addresses this need.
+        </aside>
+      </section>
+
+      <section data-auto-animate data-transition="slide-in fade-out">
+        <h2>Modern Developer <i class="qt-green">Expectations</i> 🌟</h2>
+        <ul>
+          <li>Cross-platform support</li>
+          <li>Rapid development cycles</li>
+          <li  class="qt-green">Multi-language support</li>
+        </ul>
         <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="qt-green">Key Insight:</i> Multi-language support drives framework adoption
+          <i class="qt-green">Key Insight:</i> New developers are embracing modern languages, and frameworks must adapt.
         </p>
+        <aside class="notes">
+          - Highlight that while C++ remains a cornerstone, new developers are increasingly using languages like Python, Rust, and others.
+          - Emphasize the importance of adapting frameworks to support these languages to stay relevant.
+          - Transition to the next slide to show how multi-language support addresses this need.
+        </aside>
       </section>
 
       <section data-transition="slide-in fade-out">
         <h2>Why <i class="qt-green">Multi-Language Support</i> Matters 🔌</h2>
         <ul>
-          <li class="fragment">Key benefits:</li>
-          <ul>
-            <li class="fragment">Use your <i class="yellow">preferred language</i> 👩‍💻</li>
-            <li class="fragment">Choose the <i class="yellow">best tool</i> for each component ⚡</li>
-            <li class="fragment">Attract a <i class="yellow">broader developer base</i> 🎯</li>
-          </ul>
-          <li class="fragment">Success stories:</li>
-          <ul>
-            <li class="fragment"><i class="blue">Tauri</i>: Filled Rust's GUI framework gap</li>
-            <li class="fragment"><i class="blue">Flutter</i>: Inspired <i class="qt-green">Flet</i> for Python</li>
-            <li class="fragment"><i class="blue">Electron</i>: Enabled <i class="qt-green">Eel</i> for Python backends</li>
-          </ul>
+          <li class="fragment">Use your <i class="yellow">preferred language</i></li>
+          <li class="fragment">Bridge <i class="yellow">modern languages</i> with established frameworks</li>
+          <li class="fragment">Enable <i class="yellow">scalability</i> for large projects</li>
+          <li class="fragment">Reuse framework elements across <i class="yellow">multiple languages</i></li>
         </ul>
         <aside class="notes">
-          - Show how multi-language support drives framework adoption
-          - Highlight successful examples in modern frameworks
-          - Lead into Qt's multi-language strategy
+          - Focus on the key benefits of multi-language support.
+          - I personally prefer Python for its simplicity and readability.
+          - Highlight scalability, reusability, and bridging modern languages.
+          - Transition to success stories to show real-world examples.
         </aside>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2><i class="qt-green">Qt's</i> Unique Position 🌟</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <div>
-            <ul>
-              <li class="fragment">Multi-language support through:</li>
-              <ul>
-                <li class="fragment">QML as modern frontend</li>
-                <li class="fragment">Rich backend ecosystem:
-                  <ul style="font-size: 90%;">
-                    <li>Python (<i class="yellow">PySide6</i>)</li>
-                    <li>Rust (<i class="yellow">cxx-qt</i>)</li>
-                    <li>Java, and more</li>
-                  </ul>
-                </li>
-              </ul>
-            </ul>
-          </div>
-          <div class="fragment">
-            <h3 style="font-size: 80%;">Developer Interest Growing 📈</h3>
-            <div class="chart-container" style="position: relative; height: 15vh; width: 100%">
-              <canvas id="qtGrowthChart"></canvas>
-            </div>
-            <p style="font-size: 70%; text-align: center; margin-top: 10px;">
-              Stack Overflow Survey 2024: Qt learning interest
-            </p>
-          </div>
-        </div>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="qt-green">Key Question:</i> How can Qt leverage this momentum?
-        </p>
+        <h2>Supporting new languages in <i class="qt-green">Qt</i>?</h2>
         <aside class="notes">
-          - Highlight Qt's comprehensive language support strategy
-          - Show growing developer interest with concrete data
-          - Lead into discussion about future opportunities
         </aside>
       </section>
 
-      <section data-transition="slide-in fade-out">
-        <h2>The Path <i class="qt-green">Forward</i> 🛣️</h2>
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2>Option 1: Rewrite Qt in New Languages </h2>
+        <aside class="notes">
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2>Option 1: Rewrite Qt in New Languages</h2>
         <ul>
-          <li class="fragment">
-            <strong>Option 1:</strong> Rewrite Qt in new languages
-            <ul>
-              <li style="color: #FF4444;">❌ Massive effort</li>
-              <li style="color: #FF4444;">❌ Loss of maturity</li>
-              <li style="color: #FF4444;">❌ Fragmentation risk</li>
-            </ul>
-          </li>
-          <li class="fragment">
-            <strong>Option 2:</strong> Create language bindings for Qt
-            <ul>
-              <li style="color: #41CD52;">✅ Preserve Qt's maturity</li>
-              <li style="color: #41CD52;">✅ Incremental adoption</li>
-              <li style="color: #41CD52;">✅ Proven approach (PySide6)</li>
-            </ul>
-          </li>
-          <li class="fragment blur-text">
-            <strong>Option 3:</strong> Unified frontend, multiple backends
-            <ul>
-              <li class="blur-text">QML as the universal frontend</li>
-              <li class="blur-text">Simplified backend integration</li>
-              <li class="blur-text">Lower entry barrier</li>
-            </ul>
-          </li>
+          <li>Massive effort</li>
+          <li>Loss of maturity</li>
+          <li>Fragmentation risk</li>
         </ul>
         <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="yellow">But what made PySide6 possible? Let's meet the hidden hero...</i>
+          <i class="qt-green">Key Insight:</i> Rewriting Qt is not practical.
         </p>
         <aside class="notes">
-          - Discuss the trade-offs of each approach
-          - Highlight why language bindings are currently our best option
-          - Hint at a future direction (Option 3) without revealing details
+          - **Massive effort**: Rewriting a framework as mature as Qt would take years of development and testing. It would require significant resources and could delay innovation.
+          - **Loss of maturity**: Qt has decades of optimizations and stability. A rewrite would lose this maturity, and the new version might lack feature parity.
+          - **Fragmentation risk**: Creating language-specific versions could split the community and lead to inconsistent behavior across implementations.
+          - Conclude by emphasizing that this approach is not feasible for a framework as established as Qt.
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate=>
+        <h2>Option 2: Create Language Bindings for Qt</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2>Option 2: Create Language Bindings for Qt</h2>
+        <ul>
+          <li>Preserve Qt's maturity</li>
+          <li>Incremental adoption</li>
+          <li>Proven approach (e.g., PySide6, QtJambi etc)</li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="qt-green">Question:</i> What made PySide6 works? The hidden hero is ...
+        </p>
+        <aside class="notes">
+          - **Preserve Qt's maturity**: Language bindings allow us to leverage Qt's decades of stability and optimizations.
+          - **Incremental adoption**: Developers can adopt bindings gradually without disrupting existing workflows.
+          - **Proven approach**: PySide6 is a successful example of this strategy, enabling Python developers to use Qt effectively.
+          - Conclude by emphasizing that this approach is practical and scalable.
         </aside>
       </section>
 
@@ -259,26 +176,31 @@
         <h2>Meet <i class="yellow">Shiboken</i> 🛠️</h2>
         <ul>
           <li class="fragment">Binding generator tool for creating Python bindings for C++ libraries</li>
-          <li class="fragment">Core technology behind PySide6</li>
-          <li class="fragment">Features on par with other popular binding generators like <i class="blue">pybind11</i> and <i class="blue">nanobind</i>:</li>
-          <ul>
-        <li class="fragment">Automated binding generation</li>
-        <li class="fragment">Type system customization</li>
-        <li class="fragment">Smart pointer handling</li>
-        <li class="fragment">Container conversion</li>
-          </ul>
+          <li class="fragment">Features comparable to other tools like <i class="blue">pybind11</i> and <i class="blue">nanobind</i></li>
         </ul>
-       <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">Learn more about Shiboken - https://doc.qt.io/qtforpython-6/shiboken6</a>
+        <p class="fragment" style="font-size: 70%; margin-top: 20px; text-align: center;">
+          Learn more about Shiboken: <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">https://doc.qt.io/qtforpython-6/shiboken6/index.html</a>
         </p>
         <aside class="notes">
           - Introduce Shiboken as Qt's binding generation tool
           - Highlight its role in PySide6
-          - Emphasize its automated approach to binding generation
-          - Compare its features with pybind11 and nanobind
-          - Provide a link to the official Shiboken documentation
+          - Mention its comparison with pybind11 and nanobind
         </aside>
       </section>
+
+      <!-- <section data-transition="slide-in fade-out">
+        <h2><i class="yellow">Shiboken</i> Features 🌟</h2>
+        <ul>
+          <li class="fragment">Automated binding generation</li>
+          <li class="fragment">Type system customization</li>
+          <li class="fragment">Smart pointer handling</li>
+          <li class="fragment">Container conversion</li>
+        </ul>
+        <aside class="notes">
+          - Highlight key features of Shiboken
+          - Emphasize automation and advanced C++ support
+        </aside>
+      </section> -->
 
       <section data-transition="slide-in fade-out">
         <h2>The <i class="qt-green">Shiboken</i> Advantage 🎯</h2>
@@ -372,10 +294,10 @@
         </div>
       </section>
 
-      <section data-transition="slide-in fade-out">
+      <!-- <section data-transition="slide-in fade-out">
         <h4>Custom Python Bindings (with Qt)</h4>
         <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
-          <div id="left70" style="flex: 1;">
+          <div style="flex: 1;">
             <p style="font-size: 50%;">Simple typesystem</p>
             <xmp style="margin-left: 0; width: 100%; font-size: 35%; background: #3f3f3f; padding: 10px;">
       <typesystem package="wiggly">
@@ -405,7 +327,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section data-transition="slide-in fade-out">
         <h4>Shiboken Wizard 🧙‍♂️</h4>
@@ -430,6 +352,7 @@
           - Emphasize how it simplifies the binding creation process
           - Mention it's perfect for developers new to Shiboken
           - Highlight that it is available only in the commercial version
+          - Joke: Its like a wizard without a pointy hat, but with pointer magic
         </aside>
       </section>
 
@@ -473,18 +396,10 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              style="max-width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+              style="max-width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 8px rgba(0,0,0,0.3);margin-top: 0;">
             </iframe>
           </div>
         </div>
-      </section>
-
-      <section data-transition="slide-in fade-out">
-        <h4>Hybrid Applications (Python and C++)</h4>
-        <p style="font-size: 80%;">Embedding <i class="qt-lemon">Python</i> into a <i class="qt-neon">Qt/C++</i> application</p>
-        <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
-        <p style="font-size: 50%;">The Text editor interprets Python code to <i class="qt-mandarin">access</i> the Qt/C++ application to <i class="qt-mandarin">modify it</i>.</p>
-        <p style="font-size: 60%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication">scriptableapplication</a> example</p>
       </section>
 
       <section data-transition="slide-in fade-out">
@@ -501,121 +416,196 @@
               <li>Modern C++ types</li>
             </ul>
           </li>
-          <li class="fragment">
-            But... creating language binding tools is hard! 😅
-          </li>
-          <li class="fragment">
-            Time to explore <i class="qt-yellow">Option 3</i>
-          </li>
         </ul>
+        <p class="fragment" style="font-size: 1.2em; color: #FF4500; margin-top: 20px;">
+          But... creating language binding tools is hard! 😅
+        </p>
+        <p class="fragment" style="font-size: 1.2em; color: #41CD52; margin-top: 10px;">
+          Time to explore <i class="qt-yellow">Option 3</i>.
+        </p>
         <aside class="notes">
-          - Check with Cristian
-          - Celebrate Shiboken's decade-long journey
-          - Highlight technical achievements
-          - Provide documentation reference
-          - Lead into QML Bridges discussion
+          - Highlight Shiboken's decade-long journey.
+          - Emphasize the complexity of building language bindings.
+          - Transition to Option 3 as a solution.
+        </aside>
+      </section>
+
+      <section>
+        <h2>But before that ....</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>But, I am a <i class="qt-green">C++ Developer</i>, Why should I care? 🤔</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Use <i class="yellow">Python</i> for rapid prototyping without recompiling</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility - Hello `QtScrypt`</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Write UI logic in Python, keep performance-critical code in C++</h2>
+        <aside class="notes">
+          - Highlight Python's benefits for C++ developers
+          - Emphasize that Python complements C++, not replaces it
+          - Mention specific use cases like prototyping, scripting, and leveraging Python libraries - expand on this
         </aside>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Expanding Beyond <i class="qt-green">Python</i> 🌍</h2>
-        <ul>
-          <li class="fragment">
-            Years of effort to build reliable bindings for Python:
-            <ul>
-              <li><span style="color: #FFD43B;">__feature__</span>: Modern Python patterns</li>
-              <li><span style="color: #41CD52;">snake_case</span>: Pythonic method aliases</li>
-              <li><span style="color: #306998;">QtAsyncIO</span>: Async/await support</li>
-              <li>
-            </ul>
-          </li>
-          <li class="fragment">
-            Does it make sense to replicate this for other languages? 🤔
-          </li>
-          <li class="fragment">
-            A new approach:
-            <ul>
-              <li>Reduce scope and focus on simplicity</li>
-              <li>Leverage <span style="color: #41CD52;">QMetaObjectBuilder</span> for dynamic integration</li>
-              <li>Expose Qt to other languages with minimal effort</li>
-            </ul>
-          </li>
-        </ul>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="qt-yellow">Time to explore Option 3</i> 🚀
-        </p>
+        <h2>And many more ...</h2>
         <aside class="notes">
-          - Highlight the Python-specific features we've added over the years.
-          - Pose the question: Should we replicate this for other languages?
-          - Introduce the idea of reducing scope and using QMetaObjectBuilder for simpler integration.
-          - Transition to Option 3 as the next step.
+          - Expand on we can tap into the benefits of other languages through Multi Language support
+          - Highlight Python's benefits for C++ developers
+          - Emphasize that Python complements C++, not replaces it
+          - Mention specific use cases like prototyping, scripting, and leveraging Python libraries - expand on this
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2>Option 3: <span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2>Option 3: <span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
+        <ul>
+          <li><span style="color: #FF8C00;">QML</span> as the universal frontend</li>
+          <li><span style="color: #32CD32;">Simplified</span> backend integration</li>
+          <li><span style="color: #FFD700;">Lower entry barrier</span></li>
+        </ul>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2 style="color: #41CD52;">🌟 Origin of the Idea 🌟</h2>
+        <p style="color: #FFD700; font-size: 80%; margin-top: 20px; text-align: center;">
+          Every great journey begins with a spark of inspiration! ✨
+        </p>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Building on Qt WS 2023's <i class="qt-green">Insights</i> 🌟</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+          <div>
+            <iframe
+              width="400"
+              height="315"
+              src="https://www.youtube.com/embed/SKIU4gLLooA"
+              title="The Role of Language Bindings in the Future of the Qt Ecosystem"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <p style="font-size: 70%; margin-top: 10px; margin-left: -40px;">
+              📚Slides: <a href="https://github.com/cmaureir/qtforpython_qtws2023">https://github.com/cmaureir/qtforpython_qtws2023</a>
+            </p>
+          </div>
+          <div>
+            <p class="yt-title">
+              <i class="qt-green">Cristian Maureira-Fredes'</i> vision from QtWS 2023:
+            </p>
+            <ul style="font-size: 80%;">
+              <li class="fragment">Multi-language support for modern frameworks</li>
+              <li class="fragment">Benefits and strengths of different languages</li>
+                <li class="fragment">Exploration of <span style="color: #DEA584;">Rust</span>, <span style="color: #5DADEC;">Carbon</span>, <span style="color: #F69A1A;">Zig</span> and others</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          - Cristian's talk:
+            * Explored multiple languages (Python, Rust, Carbon, Zig)
+            * Showed an insight into the benefits and strengths of different languages
+            * Set the theoretical foundation and power shift to the importance of multiple language
+
+          - My talk:
+            * Build on the theroretical foundation to show the practical path forward
+            * Shows working prototype using QMetaObjectBuilder
+            * Demonstrates simplified language integration
+
+          - Key transition:
+            * From "what could be possible" to "here's how we're doing it"
+            * From exploration to implementation
         </aside>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>The Path <i class="qt-green">Forward</i> 🛣️</h2>
-        <ul>
-          <li class="fragment">
-            <strong>Option 1:</strong> Rewrite Qt in new languages
+        <h2>Multi-Language <i class="qt-green">Success Stories</i> - Other Frameworks 🚀</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
             <ul>
-              <li style="color: #FF4444;">❌ Massive effort</li>
-              <li style="color: #FF4444;">❌ Loss of maturity</li>
-              <li style="color: #FF4444;">❌ Fragmentation risk</li>
+              <li class="fragment">
+                <i class="blue">Tauri</i>: Filled Rust's GUI framework gap - <i class="red">not the right phrasing, imporve this</i>
+              </li>
+              <li class="fragment">
+                <i class="blue">Flutter</i>: Inspired <i class="qt-green">Flet</i> for Python
+              </li>
+              <li class="fragment">
+                <i class="blue">Electron</i>: Enabled <i class="qt-green">Eel</i> for Python backends
+              </li>
             </ul>
-          </li>
-          <li class="fragment">
-            <strong>Option 2:</strong> Create language bindings for Qt
-            <ul>
-              <li style="color: #41CD52;">✅ Preserve Qt's maturity</li>
-              <li style="color: #41CD52;">✅ Incremental adoption</li>
-              <li style="color: #41CD52;">✅ Proven approach (PySide6)</li>
-            </ul>
-          </li>
-          <li class="fragment">
-            <strong>Option 3:</strong> Unified frontend, multiple backends
-            <ul>
-              <li>QML as the universal frontend</li>
-              <li>Simplified backend integration</li>
-              <li>Lower entry barrier</li>
-            </ul>
-          </li>
-        </ul>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <i class="yellow">We are working on a new approach to simplify multi-language integration...</i>
-        </p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+            <img class="fragment fade-in" src="img/tauri.svg" alt="Tauri Logo" style="width: 200px; height: auto;">
+            <img class="fragment fade-in" src="img/flutter.svg" alt="Flutter Logo" style="width: 200px; height: auto;">
+            <img class="fragment fade-in" src="img/electro.png" alt="Electron Logo" style="width: 200px; height: auto;">
+          </div>
+        </div>
+        <aside class="notes">
+          - Show how other frameworks have succeeded with multi-language support
+          - Highlight the growing trend in the industry
+          - Lead into Qt's unique position in this space
+        </aside>
       </section>
 
       <section data-transition="slide-in fade-out">
         <h2>The Future of <i class="qt-green">QtQuick Development</i> 🌟</h2>
         <ul>
           <li class="fragment">
-            Making <i class="qt-yellow">QtQuick</i> feel native in every language 🎯
+        Making <i class="qt-yellow">QtQuick</i> feel native in every language
           </li>
           <li class="fragment">
-            No more wrestling with:
-            <ul>
-              <li>Complex signal-slot connections 🔌</li>
-              <li>Property system intricacies 🔧</li>
-              <li>Qt-specific patterns 📚</li>
-            </ul>
-          </li>
-          <li class="fragment">Write backend code in your preferred language:
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px;">
-              <span class="fragment">Python 🐍</span>
-              <span class="fragment">Rust 🦀</span>
-              <span class="fragment">Java ☕</span>
-              <span class="fragment">Kotlin 🧩</span>
-              <span class="fragment">C# ⚙️</span>
-              <span class="fragment">Swift 🍎</span>
-            </div>
+        No more wrestling with:
+        <ul>
+          <li>Signal-slot connections</li>
+          <li>Property system intricacies</li>
+          <li>Qt-specific patterns</li>
+        </ul>
           </li>
         </ul>
         <aside class="notes">
-          - Emphasize the vision of making QtQuick more accessible
-          - Highlight how we're removing traditional Qt complexity
-          - Show the broad language support planned
-          - Build anticipation for the technical details
+          - Highlight the goal of making QtQuick accessible across languages.
+          - Emphasize removing traditional Qt complexities.
         </aside>
+      </section>
+
+      <section>
+        <h2>Write your <span style="color: #41CD52;">backend</span> in <span style="color: #FFD700;">multiple languages</span> ....</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Python 🐍</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Rust 🦀</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Java ☕</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Kotlin 🧩</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>C# ⚙️</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Swift 🍎</h2>
       </section>
 
       <section data-transition="slide-in fade-out">
@@ -692,7 +682,7 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
           <!-- Left column -->
           <div>
-            <p id="left" class="fragment" style="font-size: 70%;">Write natural Python code:</p>
+            <p  class="fragment" style="font-size: 70%;">Write natural Python code:</p>
             <pre class="fragment" style="font-size: 40%;"><code class="python" data-trim data-noescape>
       class StringModel:
           def __init__(self):
@@ -711,7 +701,7 @@
 
           <!-- Right column -->
           <div>
-            <p id="left" class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
+            <p  class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
             <pre class="fragment" style="font-size: 40%;"><code class="qml" data-trim data-noescape>
       import QtQuick
       import QtQuick.Controls
@@ -734,11 +724,11 @@
 
       <section data-transition="slide-in fade-out">
         <h2>Technology <i class="qt-green">Preview</i> 🎥</h2>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-          <div class="fragment" style="width: 80%; aspect-ratio: 16/9; background: #2b2b2b; display: flex; justify-content: center; align-items: center;">
-            <p style="color: #666;">Demo video coming soon...</p>
+        <div style="display: flex; flex-direction: column; align-items: center; background-color: #2C2F33; padding: 20px; border-radius: 10px;">
+          <div class="fragment" style="width: 80%; aspect-ratio: 16/9; background: #23272A; display: flex; justify-content: center; align-items: center; border: 2px solid #41CD52; border-radius: 8px;">
+            <p style="color: #41CD52;">Demo video coming soon...</p>
           </div>
-          <p class="fragment" style="font-size: 80%; margin-top: 20px;">
+          <p class="fragment" style="font-size: 80%; margin-top: 20px; color: #FFFFFF;">
             Stay tuned for more updates on this exciting development! 🚀
           </p>
         </div>
@@ -751,33 +741,195 @@
 
       <section data-transition="slide-in fade-out">
         <h2>Looking <i class="qt-green">Forward</i> 🚀</h2>
-        <div style="font-size: 120%; line-height: 1.4;">
+        <div style="line-height: 1.4;">
+          <h3 class="fragment" style="color: #41CD52;">Proven Foundation</h3>
           <ul>
-            <li class="fragment">Proven Foundation
-              <ul>
-                <li><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
-                <li><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
-              </ul>
-            </li>
-            <li class="fragment">Future Vision
-              <ul>
-                <li><span style="color: #2CDE85;">Multi-language support</span> as a core strength</li>
-                <li>Unified frontend with <span style="color: #306998;">QtQuick</span></li>
-                <li>Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
-                <li>Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
-                <li>Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
-              </ul>
-            </li>
+            <li class="fragment"><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
+            <li class="fragment"><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
           </ul>
         </div>
         <aside class="notes">
           - Highlight our solid foundation with Shiboken and PySide6
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Future <i class="qt-green">Vision</i> 🌟</h2>
+        <div style="line-height: 1.4;">
+          <ul>
+            <li class="fragment"><span style="color: #2CDE85;">Multi-language support</span> as a core strength</li>
+            <li class="fragment">Unified frontend with <span style="color: #306998;">QtQuick</span></li>
+            <li class="fragment">Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
+            <li class="fragment">Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
+            <li class="fragment">Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
+          </ul>
+        </div>
+        <aside class="notes">
           - Emphasize the simplified development approach
           - Share the vision for Qt's multi-language future
         </aside>
       </section>
 
       <section data-background-image="img/ws_back.jpg" data-transition="slide-in fade-out">
+      </section>
+
+      <section data-background-image="img/ws_back_original.jpg" data-transition="slide-in fade-out">
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Extra non needed buffer slides</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Expanding Beyond <i class="qt-green">Python</i> 🌍</h2>
+        <ul>
+          <li class="fragment">
+            Years of effort to build reliable bindings for Python:
+            <ul>
+              <li><span style="color: #FFD43B;">__feature__</span>: Modern Python patterns</li>
+              <li><span style="color: #41CD52;">snake_case</span>: Pythonic method aliases</li>
+              <li><span style="color: #306998;">QtAsyncIO</span>: Async/await support</li>
+              <li>
+            </ul>
+          </li>
+          <li class="fragment">
+            Does it make sense to replicate this for other languages? 🤔
+          </li>
+          <li class="fragment">
+            A new approach:
+            <ul>
+              <li>Reduce scope and focus on simplicity</li>
+              <li>Leverage <span style="color: #41CD52;">QMetaObjectBuilder</span> for dynamic integration</li>
+              <li>Expose Qt to other languages with minimal effort</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="qt-yellow">Time to explore Option 3</i> 🚀
+        </p>
+        <aside class="notes">
+          - Highlight the Python-specific features we've added over the years.
+          - Pose the question: Should we replicate this for other languages?
+          - Introduce the idea of reducing scope and using QMetaObjectBuilder for simpler integration.
+          - Transition to Option 3 as the next step.
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2><i class="qt-green">Qt's</i> Unique Position 🌟</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <ul>
+              <li class="fragment">Multi-language support through:</li>
+              <ul>
+                <li class="fragment">QML as modern frontend</li>
+                <li class="fragment">Rich backend ecosystem:
+                  <ul style="font-size: 90%;">
+                    <li>Python (<i class="yellow">PySide6</i>)</li>
+                    <li>Rust (<i class="yellow">cxx-qt</i>)</li>
+                    <li>Java, and more</li>
+                  </ul>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="fragment">
+            <h3 style="font-size: 80%;">Developer Interest Growing 📈</h3>
+            <div class="chart-container" style="position: relative; height: 15vh; width: 100%">
+              <canvas id="qtGrowthChart"></canvas>
+            </div>
+            <p style="font-size: 70%; text-align: center; margin-top: 10px;">
+              Stack Overflow Survey 2024: Qt learning interest
+            </p>
+          </div>
+        </div>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="qt-green">Key Question:</i> How can Qt leverage this momentum?
+        </p>
+        <aside class="notes">
+          - Highlight Qt's comprehensive language support strategy
+          - Show growing developer interest with concrete data
+          - Lead into discussion about future opportunities
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>The Path <i class="qt-green">Forward</i> 🛣️</h2>
+        <ul>
+          <li class="fragment">
+            <strong>Option 1:</strong> Rewrite Qt in new languages
+            <ul>
+              <li style="color: #FF4444;">❌ Massive effort</li>
+              <li style="color: #FF4444;">❌ Loss of maturity</li>
+              <li style="color: #FF4444;">❌ Fragmentation risk</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <strong>Option 2:</strong> Create language bindings for Qt
+            <ul>
+              <li style="color: #41CD52;">✅ Preserve Qt's maturity</li>
+              <li style="color: #41CD52;">✅ Incremental adoption</li>
+              <li style="color: #41CD52;">✅ Proven approach (PySide6)</li>
+            </ul>
+          </li>
+          <li class="fragment blur-text">
+            <strong>Option 3:</strong> Unified frontend, multiple backends
+            <ul>
+              <li class="blur-text">QML as the universal frontend</li>
+              <li class="blur-text">Simplified backend integration</li>
+              <li class="blur-text">Lower entry barrier</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="yellow">But what made PySide6 possible? Let's meet the hidden hero...</i>
+        </p>
+        <aside class="notes">
+          - Discuss the trade-offs of each approach
+          - Highlight why language bindings are currently our best option
+          - Hint at a future direction (Option 3) without revealing details
+        </aside>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>The Path <i class="qt-green">Forward</i> 🛣️</h2>
+        <ul>
+          <li class="fragment">
+            <strong>Option 1:</strong> Rewrite Qt in new languages
+            <ul>
+              <li style="color: #FF4444;">❌ Massive effort</li>
+              <li style="color: #FF4444;">❌ Loss of maturity</li>
+              <li style="color: #FF4444;">❌ Fragmentation risk</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <strong>Option 2:</strong> Create language bindings for Qt
+            <ul>
+              <li style="color: #41CD52;">✅ Preserve Qt's maturity</li>
+              <li style="color: #41CD52;">✅ Incremental adoption</li>
+              <li style="color: #41CD52;">✅ Proven approach (PySide6)</li>
+            </ul>
+          </li>
+          <li class="fragment">
+            <strong>Option 3:</strong> Unified frontend, multiple backends
+            <ul>
+              <li>QML as the universal frontend</li>
+              <li>Simplified backend integration</li>
+              <li>Lower entry barrier</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
+          <i class="yellow">We are working on a new approach to simplify multi-language integration...</i>
+        </p>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h4>Hybrid Applications (Python and C++)</h4>
+        <p style="font-size: 80%;">Embedding <i class="qt-lemon">Python</i> into a <i class="qt-neon">Qt/C++</i> application</p>
+        <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
+        <p style="font-size: 50%;">The Text editor interprets Python code to <i class="qt-mandarin">access</i> the Qt/C++ application to <i class="qt-mandarin">modify it</i>.</p>
+        <p style="font-size: 60%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication">scriptableapplication</a> example</p>
       </section>
     </div>
   </div>

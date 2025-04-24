@@ -30,20 +30,6 @@
   <div class="reveal">
     <div class="slides">
       <!--***************************************************************************-->
-      <section data-background-image="img/ws_front_1.jpg" data-transition="slide-in fade-out">
-        <!-- <div id="left70" style="margin-top: 40%; margin-left: 15%;">
-            <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond 🚀</h3>
-          <hr class="qt-line" style="border: 2px solid #41CD52; width: 50%; margin: 10px 0;" />
-          <p class="x80">
-            <i class="qt-green">Shyamnath</i> Premnadh<br/>
-            Staff Software Engineer, Qt for Python<br/>
-          </p>
-        </div> -->
-        <aside class="notes">
-            - to be added
-        </aside>
-      </section>
-
       <section data-background-image="img/ws_front_original.jpg" data-transition="slide-in fade-out">
         <div id="left70" style="margin-top: 40%; margin-left: 15%;">
             <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond 🚀</h3>
@@ -228,15 +214,12 @@
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Multi-Language <i class="qt-green">Success Stories</i> 🚀</h2>
+        <h2>Multi-Language <i class="qt-green">Success Stories</i> - Other Frameworks 🚀</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div>
             <ul>
               <li class="fragment">
-                <i class="qt-green">PySide6</i>: Production-ready Python Qt bindings
-              </li>
-              <li class="fragment">
-                <i class="blue">Tauri</i>: Filled Rust's GUI framework gap
+                <i class="blue">Tauri</i>: Filled Rust's GUI framework gap - <i class="red">not the right phrasing, imporve this</i>
               </li>
               <li class="fragment">
                 <i class="blue">Flutter</i>: Inspired <i class="qt-green">Flet</i> for Python
@@ -247,14 +230,12 @@
             </ul>
           </div>
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
-            <img class="fragment fade-in" src="img/pyside.png" alt="PySide Logo" style="width: auto; height: auto;">
-            <img class="fragment fade-in" src="img/tauri.svg" alt="Tauri Logo" style="width: auto; height: auto;">
+            <img class="fragment fade-in" src="img/tauri.svg" alt="Tauri Logo" style="width: 200px; height: auto;">
             <img class="fragment fade-in" src="img/flutter.svg" alt="Flutter Logo" style="width: 200px; height: auto;">
             <img class="fragment fade-in" src="img/electro.png" alt="Electron Logo" style="width: 200px; height: auto;">
           </div>
         </div>
         <aside class="notes">
-          - Start with PySide6 as Qt's own success story
           - Show how other frameworks have succeeded with multi-language support
           - Highlight the growing trend in the industry
           - Lead into Qt's unique position in this space
@@ -303,26 +284,31 @@
         <h2>Meet <i class="yellow">Shiboken</i> 🛠️</h2>
         <ul>
           <li class="fragment">Binding generator tool for creating Python bindings for C++ libraries</li>
-          <li class="fragment">Core technology behind PySide6</li>
-          <li class="fragment">Features on par with other popular binding generators like <i class="blue">pybind11</i> and <i class="blue">nanobind</i>:</li>
-          <ul>
-        <li class="fragment">Automated binding generation</li>
-        <li class="fragment">Type system customization</li>
-        <li class="fragment">Smart pointer handling</li>
-        <li class="fragment">Container conversion</li>
-          </ul>
+          <li class="fragment">Features comparable to other tools like <i class="blue">pybind11</i> and <i class="blue">nanobind</i></li>
         </ul>
-       <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
-          <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">Learn more about Shiboken - https://doc.qt.io/qtforpython-6/shiboken6</a>
+        <p class="fragment" style="font-size: 70%; margin-top: 20px; text-align: center;">
+          Learn more about Shiboken: <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">https://doc.qt.io/qtforpython-6/shiboken6/index.html</a>
         </p>
         <aside class="notes">
           - Introduce Shiboken as Qt's binding generation tool
           - Highlight its role in PySide6
-          - Emphasize its automated approach to binding generation
-          - Compare its features with pybind11 and nanobind
-          - Provide a link to the official Shiboken documentation
+          - Mention its comparison with pybind11 and nanobind
         </aside>
       </section>
+
+      <!-- <section data-transition="slide-in fade-out">
+        <h2><i class="yellow">Shiboken</i> Features 🌟</h2>
+        <ul>
+          <li class="fragment">Automated binding generation</li>
+          <li class="fragment">Type system customization</li>
+          <li class="fragment">Smart pointer handling</li>
+          <li class="fragment">Container conversion</li>
+        </ul>
+        <aside class="notes">
+          - Highlight key features of Shiboken
+          - Emphasize automation and advanced C++ support
+        </aside>
+      </section> -->
 
       <section data-transition="slide-in fade-out">
         <h2>The <i class="qt-green">Shiboken</i> Advantage 🎯</h2>
@@ -417,6 +403,27 @@
       </section>
 
       <section data-transition="slide-in fade-out">
+        <h2>But, I am a <i class="qt-green">C++ Developer</i>, What's in it for Me? 🤔</h2>
+        <ul>
+          <li class="fragment">Use <i class="yellow">Python</i> for rapid prototyping without recompiling</li>
+          <li class="fragment">Make your application <i class="yellow">scriptable</i> for easier extensibility - "maybe move to a different setup"</li>
+          <li class="fragment">Leverage Python's rich ecosystem:
+            <ul>
+              <li>Machine learning (<i class="yellow">TensorFlow</i>, <i class="yellow">PyTorch</i>)</li>
+              <li>Data analysis (<i class="yellow">NumPy</i>, <i class="yellow">Pandas</i>)</li>
+            </ul>
+          </li>
+          <li class="fragment">Write UI logic in Python, keep performance-critical code in C++ - Maybe move the tensorflow example here</li>
+          <li class="fragment">Enable collaboration with Python developers</li>
+        </ul>
+        <aside class="notes">
+          - Highlight Python's benefits for C++ developers
+          - Emphasize that Python complements C++, not replaces it
+          - Mention specific use cases like prototyping, scripting, and leveraging Python libraries - expand on this
+        </aside>
+      </section>
+
+      <!-- <section data-transition="slide-in fade-out">
         <h4>Custom Python Bindings (with Qt)</h4>
         <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
           <div style="flex: 1;">
@@ -449,7 +456,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section data-transition="slide-in fade-out">
         <h4>Shiboken Wizard 🧙‍♂️</h4>

@@ -106,11 +106,11 @@
 
       <section data-transition="slide-in fade-out">
         <h2>Why <i class="qt-green">Multi-Language Support</i> Matters 🔌</h2>
-        <ul>
-          <li class="fragment">Use your <i class="yellow">preferred language</i></li>
-          <li class="fragment">Bridge <i class="yellow">modern languages</i> with established frameworks</li>
-          <li class="fragment">Enable <i class="yellow">scalability</i> for large projects</li>
-          <li class="fragment">Reuse framework elements across <i class="yellow">multiple languages</i></li>
+        <ul class="fragment">
+            <li>Use your <i class="yellow">preferred language</i></li>
+            <li>Bridge <i class="yellow">modern languages</i> with established frameworks</li>
+            <li>Enable <i class="yellow">scalability</i> for large projects</li>
+            <li>Reuse framework elements across <i class="yellow">multiple languages</i></li>
         </ul>
         <aside class="notes">
           - Focus on the key benefits of multi-language support.
@@ -134,12 +134,12 @@
 
       <section data-transition="slide-in fade-out" data-auto-animate>
         <h2>Option 1: Rewrite <i class="qt-green">Qt</i> in New Languages</h2>
-        <ul>
+        <ul class="fragment">
           <li style="color: #FF4444;">❌ Massive effort</li>
           <li style="color: #FF4444;">❌ Loss of maturity</li>
           <li style="color: #FF4444;">❌ Fragmentation risk</li>
         </ul>
-        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center; color: #FF4500;"></p>
+        <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
           <i class="qt-green">Key Insight:</i> Rewriting Qt is not practical.
         </p>
         <aside class="notes">
@@ -210,22 +210,22 @@
       <section data-transition="slide-in fade-out">
         <h2>The <i class="qt-green">Shiboken</i> Advantage 🎯</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <div>
+          <div class="fragment">
             <h3 style="font-size: 80%;">Traditional Approaches</h3>
             <ul>
-              <li class="fragment" style="color: #FF4444;">
+              <li style="color: #FF4444;">
                 ❌ Modify source code. <span style="color: #fefefe;">(e.g., SWIG, JNI, etc.)</span>
               </li>
-              <li class="fragment" style="color: #FF4444;">❌ Manual binding maintenance</li>
-              <li class="fragment" style="color: #FF4444;">❌ Framework-agnostic solutions</li>
+              <li style="color: #FF4444;">❌ Manual binding maintenance</li>
+              <li style="color: #FF4444;">❌ Framework-agnostic solutions</li>
             </ul>
           </div>
-          <div>
+          <div class="fragment">
             <h3 style="font-size: 80%;">Shiboken's Way</h3>
             <ul>
-              <li class="fragment" style="color: #41CD52;">✅ Non-intrusive binding generation</li>
-              <li class="fragment" style="color: #41CD52;">✅ Automated updates with Qt releases</li>
-              <li class="fragment" style="color: #41CD52;">✅ Qt-specific optimizations</li>
+              <li style="color: #41CD52;">✅ Non-intrusive binding generation</li>
+              <li style="color: #41CD52;">✅ Automatically adapts to new Qt features and classes</li>
+              <li style="color: #41CD52;">✅ Qt-specific optimizations</li>
             </ul>
           </div>
         </div>
@@ -235,6 +235,7 @@
           - SWIG needs special directives in source files
           - Emphasize the importance of not modifying Qt's source code
           - Highlight automation benefits for large frameworks
+          -  Qt-specific optimizations - Efficient conversion from Qt containers to Python sequences, Signal Slot mechanism etc.
         </aside>
       </section>
 
@@ -863,19 +864,22 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2 class="fragment">Proven Foundation 💡</h2>
+        <h2>Proven Foundation 💡</h2>
         <ul>
-          <li class="fragment"><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
-          <li class="fragment"><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
+          <li><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
+          <li><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
         </ul>
-        <p class="fragment" style="font-size: 0.8em; margin-top: 20px; color: #666;">
+        <p style="font-size: 0.8em; margin-top: 20px; color: #666;">
           Learn more about PySide6:
           <a href="https://doc.qt.io/qtforpython-6/" target="_blank" style="color: #41CD52;">
         doc.qt.io/qtforpython-6
           </a>
         </p>
-        <p class="fragment" style="font-size: 70%; margin-top: 20px; text-align: center;"></p>
-          Learn more about Shiboken: <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">https://doc.qt.io/qtforpython-6/shiboken6/index.html</a>
+        <p style="font-size: 0.8em; margin-top: 20px; color: #666;">
+          Learn more about Shiboken:
+          <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">
+            doc.qt.io/qtforpython-6/shiboken6
+          </a>
         </p>
         <aside class="notes">
           - Highlight our solid foundation with Shiboken and PySide6
@@ -887,12 +891,12 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       <section data-transition="slide-in fade-out">
         <h2>Future <i class="qt-green">Vision</i> 🌟</h2>
         <div style="line-height: 1.4;">
-          <ul>
-            <li class="fragment"><span style="color: #2CDE85;">Multi-language support</span> as a core strength</li>
-            <li class="fragment">Unified frontend with <span style="color: #306998;">QtQuick</span></li>
-            <li class="fragment">Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
-            <li class="fragment">Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
-            <li class="fragment">Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
+          <ul class="fragment">
+            <li><span style="color: #2CDE85;">Multi-language support</span> as a core strength</li>
+            <li>Unified frontend with <span style="color: #306998;">QtQuick</span></li>
+            <li>Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
+            <li>Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
+            <li>Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
           </ul>
         </div>
         <aside class="notes">

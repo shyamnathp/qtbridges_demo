@@ -288,7 +288,6 @@ a {
 iframe, img {
   max-width: 100%;
   height: auto;
-  aspect-ratio: 16/9; /* Maintain aspect ratio for videos */
   margin-top:33px;
 }
 

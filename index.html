@@ -78,7 +78,7 @@
         <ul>
           <li class="fragment">Cross-platform support</li>
           <li class="fragment">Rapid development cycles</li>
-          <li class="fragment">Multi-language support</li>
+          <li class="fragment">Multi-lang support</li>
         </ul>
         <aside class="notes">
           - Highlight that while C++ remains a cornerstone, new developers are increasingly using languages like Python, Rust, and others.
@@ -92,7 +92,7 @@
         <ul>
           <li>Cross-platform support</li>
           <li>Rapid development cycles</li>
-          <li  class="qt-green">Multi-language support</li>
+          <li  class="qt-green">Multi-lang support</li>
         </ul>
         <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
           <i class="qt-green">Key Insight:</i> New developers are embracing modern languages, and frameworks must adapt.
@@ -105,7 +105,7 @@
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Why <i class="qt-green">Multi-Language Support</i> Matters 🔌</h2>
+        <h2>Why <i class="qt-green">Multi-Lang Support</i> Matters 🔌</h2>
         <ul class="fragment">
             <li>Use your <i class="yellow">preferred language</i></li>
             <li>Bridge <i class="yellow">modern languages</i> with established frameworks</li>
@@ -127,17 +127,17 @@
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2> Option 1: Rewrite <i class="qt-green">Qt</i> in New Languages</h2>
+        <h2 class="r-fit-text">Option 1</h2>
+        <h2 class="r-fit-text">Rewrite <i class="qt-green">Qt</i> in New Languages</h2>
         <aside class="notes">
         </aside>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Option 1: Rewrite <i class="qt-green">Qt</i> in New Languages</h2>
-        <ul class="fragment">
-          <li style="color: #FF4444;">❌ Massive effort</li>
-          <li style="color: #FF4444;">❌ Loss of maturity</li>
-          <li style="color: #FF4444;">❌ Fragmentation risk</li>
+        <ul style="font-size:150%">
+          <li style="color: #FF4444;">Massive effort</li>
+          <li class="fragment" style="color: #FF4444;">Loss of maturity</li>
+          <li class="fragment" style="color: #FF4444;">Fragmentation risk</li>
         </ul>
         <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
           <i class="qt-green">Key Insight:</i> Rewriting Qt is not practical.
@@ -151,12 +151,12 @@
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate=>
-        <h2>Option 2: Create Language Bindings for <i class="qt-green">Qt</i></h2>
+        <h2 class="r-fit-text">Option 2</h2>
+        <h2 class="r-fit-text">Create Language Bindings for <i class="qt-green">Qt</i></h2>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Option 2: Create Language Bindings for <i class="qt-green">Qt</i></h2>
-        <ul>
+        <ul style="font-size: 140%">
           <li>
             <span style="color: #41CD52;">Preserve</span> Qt's maturity and stability
           </li>
@@ -164,9 +164,7 @@
             <span style="color: #FFD43B;">Incremental</span> adoption path
           </li>
           <li>
-            <span style="color: #1E90FF;">Proven</span> approach (e.g.,
-            <span style="color: #FFD43B;">PySide6</span>,
-            <span style="color: #1E90FF;">QtJambi</span>)
+            Proven</span> approach (e.g., PySide6, QtJambi)
           </li>
         </ul>
         <p class="fragment" style="font-size: 80%; margin-top: 20px; text-align: center;">
@@ -181,10 +179,10 @@
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Meet <i class="yellow">Shiboken</i> 🛠️</h2>
+        <h2 class="r-fit-text">Meet <i class="yellow">Shiboken</i> 🛠️</h2>
         <ul>
-          <li class="fragment">Binding generator tool for creating Python bindings for C++ libraries</li>
-          <li class="fragment">Features comparable to other tools like <i class="blue">pybind11</i> and <i class="blue">nanobind</i></li>
+          <li class="fragment">Binding generator tool</li>
+          <li class="fragment">Comparable to other tools like <i class="blue">pybind11</i> and <i class="blue">nanobind</i></li>
         </ul>
         <aside class="notes">
           - Introduce Shiboken as Qt's binding generation tool
@@ -214,18 +212,18 @@
             <h3 style="font-size: 80%;">Traditional Approaches</h3>
             <ul>
               <li style="color: #FF4444;">
-                ❌ Modify source code. <span style="color: #fefefe;">(e.g., SWIG, JNI, etc.)</span>
+                Modify source code. <span style="color: #fefefe;">(e.g., SWIG, JNI, etc.)</span>
               </li>
-              <li style="color: #FF4444;">❌ Manual binding maintenance</li>
-              <li style="color: #FF4444;">❌ Framework-agnostic solutions</li>
+              <li style="color: #FF4444;">Manual binding maintenance</li>
+              <li style="color: #FF4444;">Framework-agnostic solutions</li>
             </ul>
           </div>
           <div class="fragment">
             <h3 style="font-size: 80%;">Shiboken's Way</h3>
             <ul>
-              <li style="color: #41CD52;">✅ Non-intrusive binding generation</li>
-              <li style="color: #41CD52;">✅ Automatically adapts to new Qt features and classes</li>
-              <li style="color: #41CD52;">✅ Qt-specific optimizations</li>
+              <li style="color: #41CD52;">Non-intrusive binding generation</li>
+              <li style="color: #41CD52;">Automatically adapts to new Qt features and classes</li>
+              <li style="color: #41CD52;">Qt-specific optimizations</li>
             </ul>
           </div>
         </div>
@@ -451,50 +449,54 @@
       <section data-transition="slide-in fade-out">
         <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
         <p class="fragment" style="font-size: 1.5em; margin-top: 20px; text-align: center;">
+          Talk about scriptableapp
+        </p>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+        <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
+        <p class="fragment" style="font-size: 1.5em; margin-top: 20px; text-align: center;">
           Hello <i class="qt-green">QtPythonScripting</i>! 🎉🐍
         </p>
       </section>
 
       <section data-transition="slide-in fade-out">
         <h2>QtPythonScripting</h2>
-        <pre><code class="cpp" data-line-numbers="1-2|6|7-13|15-19|20" data-trim data-noescape>
-#include &lt;QtPythonScripting/QPythonClassType&gt;
-#include &lt;QtPythonScripting/QPythonScriptEngine&gt;
+        <pre><code class="cpp" data-trim data-noescape>
+QPythonScriptEngine engine;
+auto pType = engine.registerType&lt;QPoint&gt;();
+pType.template registerConstructor&lt;int, int&gt;();
+pType.registerMethod("x"_ba, &QPoint::x);
+pType.registerMethod("y"_ba, &QPoint::y);
+pType.registerMethod("manhattanLength"_ba,
+                     &QPoint::manhattanLength);
+pType.registerMethod("setX"_ba, &QPoint::setX);
+pType.registerMethod("setY"_ba, &QPoint::setY);
+        </code></pre>
 
-int main(int argc, char *argv[])
-{
-    QPythonScriptEngine engine;
-    auto pointType = engine.registerType&lt;QPoint&gt;();
-    pointType.template registerConstructor&lt;int, int&gt;();
-    pointType.registerMethod("x"_ba, &QPoint::x);
-    pointType.registerMethod("y"_ba, &QPoint::y);
-    pointType.registerMethod("manhattanLength"_ba, &QPoint::manhattanLength);
-    pointType.registerMethod("setX"_ba, &QPoint::setX);
-    pointType.registerMethod("setY"_ba, &QPoint::setY);
-
-    constexpr auto script = R"(
+        <pre><code class="cpp fragment" data-trim data-noescape>
+constexpr auto script = R"(
 point = QPoint(1, 1)
 point.setY(2)
-print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhattanLength())
+print(f"Point: {point.x()}, {point.y()}, "
+      f"manhattanLength= {point.manhattanLength()}")
 )"_L1;
-    engine.execute(script);
-    return 0;
-}
+engine.execute(script);
         </code></pre>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Write <i class="qt-green">UI logic</i> in <i class="yellow">Python</i> 🐍, keep <i class="blue">performance-critical</i> code in C++ </h2>
+        <h2 class="r-fit-text"><i class="qt-green">UI logic</i> in <i class="yellow">Python</i> 🐍</h2>
+        <h2 class="r-fit-text"><i class="blue">performance-critical</i> code in C++ </h2>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Write <i class="qt-green">UI logic</i> in <i class="yellow">Python</i> 🐍, keep <i class="blue">performance-critical</i> code in C++ </h2>
         <ul>
-          <li class="fragment">A proven approach used by major frameworks:</li>
+          <li class="fragment">Proven approach used by major frameworks:</li>
           <ul>
-            <li class="fragment"><i class="qt-green">PySide6</i>: Qt's UI in Python, core in C++</li>
-            <li class="fragment"><i class="yellow">TensorFlow</i>: ML APIs in Python, computations in C++</li>
-            <li class="fragment"><i class="blue">PyTorch</i>: Research-friendly Python, CUDA optimizations in C++</li>
+            <li class="fragment"><i class="qt-green">PySide6</i>: UI in Python, core in C++</li>
+            <li class="fragment"><i class="yellow">DuckDB</i>: Simple Python API, backend in C++</li>
+            <li class="fragment"><i class="blue">PyTorch & Tensorflow</i>: ML Python, CUDA optimizations in C++</li>
           </ul>
         </ul>
         <p class="fragment" style="font-size: 0.8em; margin-top: 20px; color: #666;">
@@ -513,12 +515,13 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Option 3: <span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
+        <h2 class="r-fit-text">Option 3</h2>
+        <h2><span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2 style="color: #41CD52;">🌟 Origin of the Idea 🌟</h2>
-        <p style="color: #FFD700; font-size: 80%; margin-top: 20px; text-align: center;">
+        <h2 style="color: #41CD52;">Origin of the Idea</h2>
+        <p style="font-size: 80%; margin-top: 20px; text-align: center;">
           Every great journey begins with a spark of inspiration! ✨
         </p>
       </section>
@@ -545,7 +548,7 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
               <i class="qt-green">Cristian Maureira-Fredes's</i> vision from QtWS 2023:
             </p>
             <ul style="font-size: 80%;">
-              <li class="fragment">Multi-language support for modern frameworks</li>
+              <li class="fragment">Multi-lang support for modern frameworks</li>
               <li class="fragment">Benefits and strengths of different languages</li>
                 <li class="fragment">Exploration of <span style="color: #DEA584;">Rust</span>, <span style="color: #5DADEC;">Carbon</span>, <span style="color: #F69A1A;">Zig</span> and others</li>
             </ul>
@@ -570,9 +573,9 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       <section data-transition="slide-in fade-out">
         <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
         <div style="text-align: center;">
-          <img src="img/flet.png" alt="Flet Download Stats" style="width: 100%; height: auto; max-width: 900px;">
+          <img src="img/flet.png" alt="Flet Download Stats" style="width: 50%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
-        Source: <a href="https://clickpy.clickhouse.com/dashboard/flet" target="_blank" style="color: #41CD52;">https://clickpy.clickhouse.com/dashboard/flet</a>
+        Source: <a href="https://clickpy.clickhouse.com/dashboard/flet" target="_blank" style="color: #41CD52;">clickpy.clickhouse.com/dashboard/flet</a>
           </p>
         </div>
         <aside class="notes">
@@ -585,9 +588,9 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       <section data-transition="slide-in fade-out">
         <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
         <div style="text-align: center;">
-        <img src="img/eel.png" alt="Eel Download Stats" style="height: 400px;">
+        <img src="img/eel.png" alt="Eel Download Stats" style="width: 80%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
-        Source: <a href="https://clickpy.clickhouse.com/dashboard/eel" target="_blank" style="color: #41CD52;">https://clickpy.clickhouse.com/dashboard/eel</a>
+        Source: <a href="https://clickpy.clickhouse.com/dashboard/eel" target="_blank" style="color: #41CD52;">clickpy.clickhouse.com/dashboard/eel</a>
           </p>
         </div>
         <aside class="notes">
@@ -599,34 +602,38 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       <section data-transition="slide-in fade-out">
         <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
         <div style="text-align: center;">
-        <img src="img/bindings_tauri.png" style="width: 100%; height: 200px; max-width: 900px;">
+        <img src="img/bindings_tauri.png" style="width: 80%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
-        Source: <a href="https://github.com/tauri-apps/tauri/issues/4670" target="_blank" style="color: #41CD52;">https://github.com/tauri-apps/tauri/issues/4670</a>
+        Source: <a href="https://github.com/tauri-apps/tauri/issues/4670" target="_blank" style="color: #41CD52;">github.com/tauri-apps/tauri/issues/4670</a>
           </p>
         </div>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2>Option 3: <span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
-        <ul>
-          <li><span style="color: #FF8C00;">QML</span> as the universal frontend</li>
-          <li><span style="color: #32CD32;">Simplified</span> backend integration</li>
-          <li><span style="color: #FFD700;">Lower entry barrier</span></li>
+        <h2>Unified Frontend, <span style="color: #1E90FF;">Multiple Backends</span></h2>
+        <ul style="font-size: 150%;">
+          <li><i class="qt-lemon">QML</i> as the universal frontend</li>
+          <li><i class="qt-lemon">Simplified</i> backend integration</li>
+          <li><i class="qt-neon">Lower entry barrier</i></li>
         </ul>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>The Future of <i class="qt-green">QtQuick Development - QtBridges</i> 🌉</h2>
+        <h2 class="r-fit-text">The Future of <i class="qt-green">QtQuick Development</i></h2>
+        <h2 class="r-fit-text"><i class="qt-green">Qt</i> Bridges</h2>
+      </section>
+
+      <section data-transition="slide-in fade-out">
         <ul>
-          <li class="fragment">
-        Making <i class="qt-yellow">QtQuick</i> feel native in every language
+          <li>
+          Making <i class="qt-neon">QtQuick</i> feel <i class="qt-neon">native</i> in every language
           </li>
           <li class="fragment">
-        No more wrestling with:
-        <ul>
-          <li>Signal-slot connections</li>
-          <li>Property system intricacies</li>
-          <li>Qt-specific patterns</li>
+        Simplified and automated processes for:
+        <ul style="font-size: 80%:">
+          <li><i class="qt-lemon">Signal-slot</i> connections</li>
+          <li><i class="qt-lemon">Property</i> system definition</li>
+          <li><i class="qt-neon">Qt</i>-specific patterns</li>
         </ul>
           </li>
         </ul>
@@ -728,43 +735,41 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
 
       <section data-transition="slide-in fade-out" data-auto-animate>
         <h2>Simplified <i class="qt-green">Python</i> Integration 🐍</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+        <div id="left">
           <!-- Left column -->
-          <div>
             <p  class="fragment" style="font-size: 70%;">Write natural Python code:</p>
-            <pre class="fragment" style="font-size: 50%;"><code class="python" data-trim data-noescape data-line-numbers="9-10" data-auto-animate>
+            <pre class="fragment" style="font-size: 45%; width: 98%;"><code class="python" data-trim data-noescape data-auto-animate>
       from QtBridges import AutoQmlBridge
 
-      class StringModel:
-          def add_string(self, new_string: str) -> bool:
-              print(f"Added: {new_string}")
-              return True
+      class StrModel:
+        def add_string(self, new_str: str) -> bool:
+            print(f"Added: {new_str}")
+            return True
 
       # Register with QML
-      string_model = StringModel()
-      AutoQmlBridge(string_model)</code></pre>
+      str_model = StrModel()
+      AutoQmlBridge(str_model)</code></pre>
           </div>
 
           <!-- Right column -->
-          <div>
+          <div id="right">
             <p  class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
-            <pre class="fragment" style="font-size: 50%;"><code class="qml" data-trim data-noescape data-line-numbers="11-14">
-      import QtQuick
-      import QtQuick.Controls
-      import backend 1.0
+            <pre class="fragment" style="font-size: 40%; width: 98%;"><code class="js" data-noescape>
+import QtQuick
+import QtQuick.Controls
+import backend 1.0
 
-      Column {
-          spacing: 20
-          TextField {
-              id: inputField
-              placeholderText: "Enter text"
-          }
-          Button {
-              text: "Add String"
-              onClicked: StringModel.add_string(inputField.text)
-          }
-      }</code></pre>
-          </div>
+Column {
+  spacing: 20
+  TextField {
+    id: inputField
+    placeholderText: "Enter text"
+  }
+  Button {
+    text: "Add String"
+    onClicked: StrModel.add_string(inputField.text)
+  }
+}</code></pre>
         </div>
       </section>
 
@@ -774,23 +779,23 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
           <!-- Left column: QtBridges -->
           <div>
             <p style="font-size: 70%;">QtBridges</p>
-            <pre style="font-size: 50%;"><code class="python" data-trim data-noescape data-auto-animate>
+            <pre style="font-size: 50%; width: 98%"><code class="python" data-trim data-noescape data-auto-animate>
       from QtBridges import AutoQmlBridge
 
-      class StringModel:
-          def add_string(self, new_string: str) -> bool:
-              print(f"Added: {new_string}")
-              return True
+      class StrModel:
+        def add_string(self, new_str: str) -> bool:
+          print(f"Added: {new_str}")
+          return True
 
       # Register with QML
-      string_model = StringModel()
-      AutoQmlBridge(string_model)</code></pre>
+      str_model = StrModel()
+      AutoQmlBridge(str_model)</code></pre>
           </div>
 
           <!-- Right column: PySide6 -->
           <div>
             <p class="fragment" style="font-size: 70%;">PySide6</p>
-            <pre class="fragment" style="font-size: 50%;"><code class="python" data-trim data-noescape data-line-numbers="4-5|7|9">
+            <pre class="fragment" style="font-size: 40%; width: 98%"><code class="python" data-trim data-noescape">
       from PySide6.QtCore import QObject, Slot
       from PySide6.QtQml import QmlElement
 
@@ -798,12 +803,11 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       QML_IMPORT_MAJOR_VERSION = 1
 
       @QmlElement
-      class StringModel(QObject):
-          @Slot(str, result=bool)
-          def add_string(self, new_string: str) -> bool:
-              print(f"Added: {new_string}")
-              return True
-
+      class StrModel(QObject):
+        @Slot(str, result=bool)
+        def add_string(self, new_str: str) -> bool:
+          print(f"Added: {new_str}")
+          return True
       </code></pre>
           </div>
         </div>
@@ -817,16 +821,16 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
     from PySide6.QtQml import QQmlApplicationEngine
     from QtBridges import AutoQmlBridge
 
-    class StringModel:
-        def add_string(self, new_string: str) -> bool:
-            print(f"Added: {new_string}")
+    class StrModel:
+        def add_string(self, new_str: str) -> bool:
+            print(f"Added: {new_str}")
             return True
 
     # Register with QML
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
 
-    string_model = StringModel()
+    string_model = StrModel()
     AutoQmlBridge(string_model)
 
     qml_file = "main.qml"
@@ -892,7 +896,7 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
         <h2>Future <i class="qt-green">Vision</i> 🌟</h2>
         <div style="line-height: 1.4;">
           <ul class="fragment">
-            <li><span style="color: #2CDE85;">Multi-language support</span> as a core strength</li>
+            <li><span style="color: #2CDE85;">Multi-lang support</span> as a core strength</li>
             <li>Unified frontend with <span style="color: #306998;">QtQuick</span></li>
             <li>Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
             <li>Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
@@ -955,7 +959,7 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div>
             <ul>
-              <li class="fragment">Multi-language support through:</li>
+              <li class="fragment">Multi-lang support through:</li>
               <ul>
                 <li class="fragment">QML as modern frontend</li>
                 <li class="fragment">Rich backend ecosystem:
@@ -1222,8 +1226,8 @@ print("Point: ", point.x(), ", ", point.y(), ", manhattanLength=", point.manhatt
       <!-- <div id="footer-left"></div> -->
       <div id="header-right"></div>
       <div id="footer-left">
-        <img src="img/qt_logo.webp" style="width: 40px;" />
-        <p style="font-size: 14pt;margin: 28px 10px 24px 6px;">
+        <img src="img/qt_logo.webp" style="width: 32px" />
+        <p style="font-size: 14pt; padding-left: 5px;">
           <i class="white">Qt World Summit | May 7, 2025</i>
       </div>
   </div>

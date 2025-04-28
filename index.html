@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=no">
 
   <title>Simplifying your C++ applications: Bridging Qt with Python and beyond</title>
 
@@ -24,6 +24,13 @@
       link.href = 'reveal.js/css/print/pdf.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
+    Reveal.configure({
+      width: 1920,
+      height: 1080,
+      margin: 0.5, // Adjust margins for better fit
+      pdfMaxPagesPerSlide: 1,
+      pdfSeparateFragments: false,
+    });
   </script>
 </head>
 <body>
@@ -31,7 +38,7 @@
     <div class="slides">
       <!--***************************************************************************-->
       <section data-background-image="img/ws_front_original.jpg" data-transition="slide-in fade-out">
-        <div id="left70" style="margin-top: 40%; margin-left: 15%;">
+        <div id="left70" style="margin-top: 40%; margin-left: 18%; width: 52%; font-size: 30px;">
             <h3>Simplifying your <i class="blue">C++</i> applications: Bridging <i class="yellow">Qt</i> with <i class="qt-green">Python</i> and beyond 🚀</h3>
           <hr class="qt-line" style="border: 2px solid #41CD52; width: 50%; margin: 10px 0;" />
           <p class="x80">
@@ -46,7 +53,7 @@
       <!--***************************************************************************-->
 
       <section data-auto-animate data-transition="slide-in fade-out">
-        <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> 🌟</h2>
+        <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> </h2>
         <ul>
           <li class="fragment fade-in">A strong and active community </li>
           <li class="fragment fade-in">Technical excellence and reliability </li>
@@ -61,7 +68,7 @@
       </section>
 
       <section data-auto-animate data-transition="slide-in fade-out">
-        <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> 🌟</h2>
+        <h2>The Ingredients of a <i class="qt-green">Successful Framework</i> </h2>
         <ul>
           <li>A strong and active community </li>
           <li>Technical excellence and reliability </li>
@@ -74,7 +81,7 @@
       </section>
 
       <section data-auto-animate data-transition="slide-in fade-out">
-        <h2>Modern Developer <i class="qt-green">Expectations</i> 🌟</h2>
+        <h2>Modern Developer <i class="qt-green">Expectations</i> </h2>
         <ul>
           <li class="fragment">Cross-platform support</li>
           <li class="fragment">Rapid development cycles</li>
@@ -88,7 +95,7 @@
       </section>
 
       <section data-auto-animate data-transition="slide-in fade-out">
-        <h2>Modern Developer <i class="qt-green">Expectations</i> 🌟</h2>
+        <h2>Modern Developer <i class="qt-green">Expectations</i> </h2>
         <ul>
           <li>Cross-platform support</li>
           <li>Rapid development cycles</li>
@@ -448,13 +455,13 @@
 
       <section data-transition="slide-in fade-out">
         <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
-        <p class="fragment" style="font-size: 1.5em; margin-top: 20px; text-align: center;">
-          Talk about scriptableapp
-        </p>
+        <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
+        <p style="font-size: 50%;">The Text editor interprets Python code to <i class="qt-mandarin">access</i> the Qt/C++ application to <i class="qt-mandarin">modify it</i>.</p>
+        <p style="font-size: 60%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication">scriptableapplication</a> example</p>
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
+        <h2>Scriptable Applications made easy with <i class="yellow">Dynamic</i> bindings</h2>
         <p class="fragment" style="font-size: 1.5em; margin-top: 20px; text-align: center;">
           Hello <i class="qt-green">QtPythonScripting</i>! 🎉🐍
         </p>
@@ -909,10 +916,20 @@ Column {
         </aside>
       </section>
 
-      <section data-background-image="img/ws_back.jpg" data-transition="slide-in fade-out">
-      </section>
-
       <section data-background-image="img/ws_back_original.jpg" data-transition="slide-in fade-out">
+        <div id="left" style="margin-left: -10%;">
+            <h4>Simplifying your C++ applications: Bridging Qt with Python and beyond 🚀</h4>
+          <hr class="qt-line"/>
+          <p class="x80" style="font-size: 80%;">
+            <i class="qt-lemon">Shyamnath</i> Premnadh<br>
+          </p>
+          <p class="x80" style="font-size: 80%;">
+            Slides: <a href="https://shyamnathp.github.io/qt_ws_2025/" style="font-size: 80%;">https://shyamnathp.github.io/qt_ws_2025/</a>
+          </p>
+        </div>
+        <div id="right" style="position: absolute; top: 10%; right: 5%; text-align: right;">
+          <h1 style="font-size: 350%; margin-right: -16%;"><i class="qt-neon">Q&A</i></h1>
+        </div>
       </section>
 
       <!-- <section data-transition="slide-in fade-out">

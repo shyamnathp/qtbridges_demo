@@ -215,7 +215,7 @@
       <section data-transition="slide-in fade-out">
         <h2>The <i class="qt-green">Shiboken</i> Advantage 🎯</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <div>
+          <div class="fragment">
             <h3 style="font-size: 80%;">Traditional Approaches</h3>
             <ul>
               <li style="color: #FF4444;">
@@ -225,7 +225,7 @@
               <li style="color: #FF4444;">Framework-agnostic solutions</li>
             </ul>
           </div>
-          <div>
+          <div class="fragment">
             <h3 style="font-size: 80%;">Shiboken's Way</h3>
             <ul>
               <li style="color: #41CD52;">Non-intrusive binding generation</li>
@@ -474,6 +474,11 @@ print(f"Point: {point.x()}, {point.y()}, "
 )"_L1;
 engine.execute(script);
         </code></pre>
+
+        <pre><code class="fragment" data-trim data-noescape>
+          Point: 1, 2, manhattanLength= 3
+        </code></pre>
+
       </section>
 <!--
       <section data-transition="slide-in fade-out" data-auto-animate>
@@ -558,7 +563,7 @@ engine.execute(script);
       </section> -->
 
       <section data-transition="slide-in fade-out">
-        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
+        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀(1)</h2>
         <div style="text-align: center;">
           <img src="img/flet.png" alt="Flet Download Stats" style="width: 50%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
@@ -573,7 +578,7 @@ engine.execute(script);
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
+        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀(2)</h2>
         <div style="text-align: center;">
         <img src="img/eel.png" alt="Eel Download Stats" style="width: 80%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
@@ -587,7 +592,7 @@ engine.execute(script);
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
+        <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀(3)</h2>
         <div style="text-align: center;">
         <img src="img/bindings_tauri.png" style="width: 80%;">
           <p style="font-size: 0.8em; margin-top: 10px; color: #666;">
@@ -622,7 +627,7 @@ engine.execute(script);
           </li>
           <li class="fragment">
         Simplified and automated processes for:
-        <ul style="font-size: 80%:">
+        <ul style="font-size: 80%;">
           <li><i class="qt-lemon">Signal-slot</i> connections</li>
           <li><i class="qt-lemon">Property</i> system definition</li>
           <li><i class="qt-neon">Qt</i>-specific patterns</li>
@@ -697,7 +702,7 @@ engine.execute(script);
         <div id="left">
           <!-- Left column -->
             <p  class="fragment" style="font-size: 70%;">Write natural Python code:</p>
-            <pre class="fragment" style="font-size: 45%; width: 98%;"><code class="python" data-trim data-noescape data-auto-animate>
+            <pre class="fragment" style="font-size: 45%; width: 98%;"><code class="python" data-trim data-noescape data-auto-animate data-line-numbers="">
       from QtBridges import AutoQmlBridge
 
       class StrModel:
@@ -713,7 +718,7 @@ engine.execute(script);
           <!-- Right column -->
           <div id="right">
             <p  class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
-            <pre class="fragment" style="font-size: 40%; width: 98%;"><code class="js" data-noescape>
+            <pre class="fragment" style="font-size: 40%; width: 98%;"><code class="js" data-noescape data-line-numbers="">
 import QtQuick
 import QtQuick.Controls
 import backend 1.0
@@ -738,7 +743,7 @@ Column {
           <!-- Left column: QtBridges -->
           <div>
             <p style="font-size: 70%;">QtBridges</p>
-            <pre style="font-size: 50%; width: 98%"><code class="python" data-trim data-noescape data-auto-animate>
+            <pre style="font-size: 50%; width: 98%"><code class="python" data-trim data-noescape data-auto-animate data-line-numbers="">
       from QtBridges import AutoQmlBridge
 
       class StrModel:
@@ -754,7 +759,7 @@ Column {
           <!-- Right column: PySide6 -->
           <div>
             <p class="fragment" style="font-size: 70%;">PySide6</p>
-            <pre class="fragment" style="font-size: 40%; width: 98%"><code class="python" data-trim data-noescape">
+            <pre class="fragment" style="font-size: 40%; width: 98%"><code class="python" data-trim data-noescape data-line-numbers="">
       from PySide6.QtCore import QObject, Slot
       from PySide6.QtQml import QmlElement
 
@@ -815,13 +820,13 @@ Column {
           <li><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
           <li><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
         </ul>
-        <p style="font-size: 0.8em; margin-top: 20px; color: #666;">
+        <p style="font-size: 0.8em; margin-top: 20px; text-align: center;">
           Learn more about PySide6:
           <a href="https://doc.qt.io/qtforpython-6/" target="_blank" style="color: #41CD52;">
-        doc.qt.io/qtforpython-6
+            doc.qt.io/qtforpython-6
           </a>
         </p>
-        <p style="font-size: 0.8em; margin-top: 20px; color: #666;">
+        <p style="font-size: 0.8em; margin-top: 20px; text-align: center;">
           Learn more about Shiboken:
           <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">
             doc.qt.io/qtforpython-6/shiboken6
@@ -836,15 +841,13 @@ Column {
 
       <section data-transition="slide-in fade-out">
         <h2>Future <i class="qt-green">Vision</i> 🌟</h2>
-        <div style="line-height: 1.4;">
-          <ul class="fragment">
-            <li><span style="color: #2CDE85;">Multi-lang support</span> as a core strength</li>
-            <li>Unified frontend with <span style="color: #306998;">QtQuick</span></li>
-            <li>Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
-            <li>Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
-            <li>Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
-          </ul>
-        </div>
+        <ul>
+        <li class="fragment fade-in"><span style="color: #2CDE85;">Multi-lang support</span> as a core strength</li>
+        <li class="fragment fade-in">Unified frontend with <span style="color: #306998;">QtQuick</span></li>
+        <li class="fragment fade-in">Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
+        <li class="fragment fade-in">Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
+        <li class="fragment fade-in">Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
+        </ul>
         <aside class="notes">
           - Emphasize the simplified development approach
           - Share the vision for Qt's multi-language future

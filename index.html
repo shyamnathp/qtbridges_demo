@@ -505,12 +505,7 @@ engine.execute(script);
         </aside>
       </section>
 
-      <section data-transition="slide-in fade-out" data-auto-animate>
-        <h2 class="r-fit-text">Option 3</h2>
-        <h2><span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
-      </section>
-
-      <section data-transition="slide-in fade-out">
+      <!-- <section data-transition="slide-in fade-out">
         <h2 style="color: #41CD52;">Origin of the Idea</h2>
         <p style="font-size: 80%; margin-top: 20px; text-align: center;">
           Every great journey begins with a spark of inspiration! ✨
@@ -560,7 +555,8 @@ engine.execute(script);
             * From "what could be possible" to "here's how we're doing it"
             * From exploration to implementation
         </aside>
-      </section>
+      </section> -->
+
       <section data-transition="slide-in fade-out">
         <h2>Multi-Language - <i class="qt-green">Other Frameworks</i> 🚀</h2>
         <div style="text-align: center;">
@@ -598,6 +594,11 @@ engine.execute(script);
         Source: <a href="https://github.com/tauri-apps/tauri/issues/4670" target="_blank" style="color: #41CD52;">github.com/tauri-apps/tauri/issues/4670</a>
           </p>
         </div>
+      </section>
+
+      <section data-transition="slide-in fade-out" data-auto-animate>
+        <h2 class="r-fit-text">Option 3</h2>
+        <h2><span style="color: #41CD52;">Unified Frontend</span>, <span style="color: #1E90FF;">Multiple Backends</span></h2>
       </section>
 
       <section data-transition="slide-in fade-out" data-auto-animate>
@@ -888,7 +889,7 @@ Column {
       maxScale: 2.0, // Maximum scaling factor
       // Learn about plugins: https://revealjs.com/plugins/
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-    });
+      });
 
     Chart.register(ChartDataLabels);
     const ctx = document.getElementById('qtGrowthChart').getContext('2d');
@@ -951,6 +952,9 @@ Column {
       }
     });
   </script>
+
+  <script src="socket.io/socket.io.js"></script>
+  <script src="node_modules/reveal-notes-server/client.js"></script>
   <!-- Hack to have a footer-->
 
   <!-- 1. Style header/footer <div> so they are positioned as desired: in css/qt.css -->
@@ -987,6 +991,10 @@ Column {
        html = html.trim().replace(/\n/g, '<br/>');
        n.innerHTML = html;
      });
+  </script>
+
+  <script>
+    showQr();
   </script>
 </body>
 </html>

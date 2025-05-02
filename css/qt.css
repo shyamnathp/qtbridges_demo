@@ -10,8 +10,10 @@
   --qt-mandarin: #FFA615;
   --qt-burgundy: #5F002D;
   --python-blue: #1e405d;
-  /*--rust-red: #ef4a00;*/
-  --rust-red: #a72145;
+  --rust-red: #ef4a00;
+  --cpp-light-blue: #659bd3;
+  --cpp-dark-blue: #004283;
+/*  --rust-red: #a72145;*/
   --zig-yellow: #ef9f1c;
   --zig-black: #111111;
   --carbon-gray: #353535;
@@ -50,7 +52,7 @@
   top: 75px;
   float: right;
   text-align: right;
-  z-index:-10;
+  t-index:-10;
   width:50%;
 }
 
@@ -196,6 +198,21 @@
 
 .qt-yellow {
   color: #ffff00;
+  font-style: normal;
+}
+
+.rust-red {
+  color: var(--rust-red);
+  font-style: normal;
+}
+
+.cpp-light-blue {
+  color: var(--cpp-light-blue);
+  font-style: normal;
+}
+
+.cpp-dark-blue {
+  color: var(--cpp-dark-blue);
   font-style: normal;
 }
 

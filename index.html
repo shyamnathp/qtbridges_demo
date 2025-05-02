@@ -393,7 +393,7 @@
         <p class="fragment" style="font-size: 1.2em; color: #FF4500; margin-top: 20px;">
           But... creating language binding tools is hard! 😅
         </p>
-        <p class="fragment" style="font-size: 1.2em; color: #41CD52; margin-top: 10px;">
+        <p class="fragment" style="font-size: 1.2em; margin-top: 30px;">
           Time to explore <i class="qt-yellow">Option 3</i>.
         </p>
         <aside class="notes">
@@ -447,33 +447,13 @@
         <h2>Write your <span style="color: #41CD52;">backend</span> in <span style="color: #FFD700;">multiple languages</span> ....</h2>
       </section>
 
-      <section data-transition="slide-in fade-out" data-background-image="img/python.svg" data-background-size="contain" data-background-position="center">
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-          <h2 style="color: #FFFFFF;">Python</h2>
-        </div>
-      </section>
-
-      <section data-transition="slide-in fade-out" data-background-image="img/rust-logo-blk.svg" data-background-size="contain" data-background-position="center">
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-          <h2 style="color: #FFFFFF;">Rust</h2>
-        </div>
-      </section>
-
-      <section data-transition="slide-in fade-out" data-background-image="img/java.svg" data-background-size="contain" data-background-position="center">
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-          <h2 style="color: #FFFFFF;">Java</h2>
-        </div>
-      </section>
-
-      <section data-transition="slide-in fade-out" data-background-image="img/csharp.png" data-background-size="contain" data-background-position="center">
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-          <h2 style="color: #FFFFFF;">C#</h2>
-        </div>
-      </section>
-
-      <section data-transition="slide-in fade-out" data-background-image="img/swift.png" data-background-size="contain" data-background-position="center">
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-          <h2 style="color: #FFFFFF;">Swift</h2>
+      <section data-transition="slide-in fade-out">
+        <div style="display: flex; justify-content: center; aliggn-items: center; gap: 2px; width: 100%;">
+          <img style="align-self:center;width: 20%;padding: 15px;" src="img/python.svg"/>
+          <img class="fragment" style="align-self:center;width: 20%;padding: 15px;" src="img/rust-logo-blk.svg"/>
+          <img class="fragment" style="align-self:center;width: 10%;padding: 15px;" src="img/java.svg"/>
+          <img class="fragment" style="align-self:center;width: 30%;padding: 15px;" src="img/csharp.png"/>
+          <img class="fragment" style="align-self:center;width: 20%;padding: 15px;" src="img/Swift_logo_color.svg"/>
         </div>
       </section>
 
@@ -505,7 +485,7 @@
         <div id="left">
           <!-- Left column -->
             <p  class="fragment" style="font-size: 70%;">Write natural Python code:</p>
-            <pre class="fragment" style="font-size: 45%; width: 98%;"><code class="python" data-trim data-noescape data-auto-animate data-line-numbers="">
+            <pre class="fragment" style="font-size: 45%; width: 98%;"><code class="python" data-trim data-noescape data-auto-animate>
       from QtBridges import AutoQmlBridge
 
       class StrModel:
@@ -521,21 +501,20 @@
           <!-- Right column -->
           <div id="right">
             <p  class="fragment" style="font-size: 70%;">Use it directly in QML:</p>
-            <pre class="fragment" style="font-size: 40%; width: 98%;"><code class="js" data-noescape data-line-numbers="">
-import Qt Quick
+            <pre class="fragment" style="font-size: 40%; width: 98%;"><code class="js" data-noescape>import Qt Quick
 import Qt Quick.Controls
 import backend 1.0
 
 Column {
-  spacing: 20
-  TextField {
-    id: inputField
-    placeholderText: "Enter text"
-  }
-  Button {
-    text: "Add String"
-    onClicked: StrModel_1.add_string(inputField.text)
-  }
+ spacing: 20
+ TextField {
+  id: inputField
+  placeholderText: "Enter text"
+ }
+ Button {
+  text: "Add String"
+  onClicked: StrModel_1.add_string(inputField.text)
+ }
 }</code></pre>
         </div>
         <aside class="notes">
@@ -549,7 +528,7 @@ Column {
           <!-- Left column: QtBridges -->
           <div>
             <p style="font-size: 70%;">QtBridges</p>
-            <pre style="font-size: 50%; width: 98%"><code class="python" data-trim data-noescape data-auto-animate data-line-numbers="">
+            <pre style="font-size: 50%; width: 98%"><code class="python" data-trim data-noescape data-auto-animate>
       from QtBridges import AutoQmlBridge
 
       class StrModel:
@@ -565,7 +544,7 @@ Column {
           <!-- Right column: PySide6 -->
           <div>
             <p class="fragment" style="font-size: 70%;">PySide6</p>
-            <pre class="fragment" style="font-size: 40%; width: 98%"><code class="python" data-trim data-noescape data-line-numbers="">
+            <pre class="fragment" style="font-size: 40%; width: 98%"><code class="python" data-trim data-noescape>
       from PySide6.QtCore import QObject, Slot
       from PySide6.QtQml import QmlElement
 
@@ -619,12 +598,13 @@ Column {
       <section data-transition="slide-in fade-out">
         <h2>Real World Use Cases with <span style="color: #41CD52;">QtBridges</span></h2>
         <ul>
-          <li class="fragment fade-in">Visualizing <span style="color: #41CD52;">AI/ML predictions</span> (e.g., charts, real-time data)</li>
-          <li class="fragment fade-in">Combining <span style="color: #FFD43B;">Python data libraries</span> with sleek <span style="color: #1E90FF;">QML frontends</span></li>
-          <li class="fragment fade-in">Rapid prototyping for <span style="color: #FF4500;">scientific simulations</span></li>
-          <li class="fragment fade-in">Developing cross-platform <span style="color: #FF9A00;">dashboards</span> for <span style="color: #2CDE85;">business analytics</span></li>
+          <li class="fragment fade-in">Rapid prototyping ⚡</li>
+          <li class="fragment fade-in">Visualizing <span style="color: #41CD52;">AI/ML predictions</span> (e.g., dashboards, real-time data)</li>
+          <li class="fragment fade-in">Combining <span style="color: #FFD43B;">Python libraries</span> with sleek <span style="color: #1E90FF;">QML frontends</span></li>
+          <li class="fragment fade-in">and many more!</li>
         </ul>
         <aside class="notes">
+          - Simple and fast way of creating a Qt UI with your favorite language
           - Highlight AI/ML data visualization in real-time.
           - Emphasize the power of Python libraries for data processing.
           - Show how QML frontends enhance user experience.
@@ -632,7 +612,8 @@ Column {
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>But, I am a <i class="qt-green">C++ Developer</i>, Why should I care? 🤔</h2>
+        <h2 class="r-fit-text">But, I am a <i class="qt-green">C++ Developer</i></h2>
+        <h2 class="r-fit-text">Why should I care? 🤔</h2>
         <aside class="notes">
           - Each language brings unique strengths to your Qt applications:
             * Rust: Memory safety, fearless concurrency, zero-cost abstractions
@@ -653,7 +634,7 @@ Column {
       </section>
 
       <section data-transition="slide-in fade-out">
-        <h2>Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
+        <h2 style="font-size: 90%;">Make your application <i class="yellow">scriptable</i> for easier extensibility</h2>
         <img style="width: 80%; background: 0; border: 0;" src="img/scriptableapplication.gif" />
         <p style="font-size: 50%;">The Text editor interprets Python code to <i class="qt-mandarin">access</i> the Qt/C++ application to <i class="qt-mandarin">modify it</i>.</p>
         <p style="font-size: 60%;">★ Check the <a href="https://code.qt.io/cgit/pyside/pyside-setup.git/tree/examples/scriptableapplication">scriptableapplication</a> example</p>
@@ -774,13 +755,12 @@ engine.execute(script);
           <li><span style="color: #41CD52;">Shiboken</span>: A decade of reliable binding generation</li>
           <li><span style="color: #FFD43B;">PySide6</span>: Production-ready Python Qt framework</li>
         </ul>
-        <p style="font-size: 0.8em; margin-top: 20px; text-align: center;">
+        <p style="font-size: 0.6em; margin-top: 40px; text-align: center;">
           Learn more about PySide6:
           <a href="https://doc.qt.io/qtforpython-6/" target="_blank" style="color: #41CD52;">
             doc.qt.io/qtforpython-6
           </a>
-        </p>
-        <p style="font-size: 0.8em; margin-top: 20px; text-align: center;">
+          <br>
           Learn more about Shiboken:
           <a href="https://doc.qt.io/qtforpython-6/shiboken6/index.html" target="_blank" style="color: #41CD52;">
             doc.qt.io/qtforpython-6/shiboken6
@@ -797,9 +777,9 @@ engine.execute(script);
         <h2>Future <i class="qt-green">Vision</i> 🌟</h2>
         <ul>
         <li class="fragment fade-in"><span style="color: #2CDE85;">Multi programming-lang support</span> as a core strength</li>
-        <li class="fragment fade-in">Unified frontend with <span style="color: #306998;">Qt Quick</span></li>
-        <li class="fragment fade-in">Write backend code in your <span style="color: #FF9A00;">preferred language</span></li>
-        <li class="fragment fade-in">Focus on <span style="color: #FF6961;">business logic</span>, not Qt internals</li>
+        <li class="fragment fade-in">Unified frontend with <i class="cpp-light-blue">Qt Quick</i></li>
+        <li class="fragment fade-in">Write backend code in your <i class="qt-mandarin">preferred language</i></li>
+        <li class="fragment fade-in">Focus on <i class="rust-red">business logic</i>, not Qt internals</li>
         <li class="fragment fade-in">Lower entry barrier for <span style="color: #3DDC84;">Qt development</span></li>
         </ul>
         <aside class="notes">
@@ -832,7 +812,7 @@ engine.execute(script);
             <i class="qt-lemon">Shyamnath</i> Premnadh<br>
           </p>
           <p class="x80" style="font-size: 80%;">
-            Slides: <a href="https://shyamnathp.github.io/qt_ws_2025/" style="font-size: 80%;">https://shyamnathp.github.io/qt_ws_2025/</a>
+            Slides: <a href="https://shyamnathp.github.io/qt_ws_2025/" style="font-size: 80%;">shyamnathp.github.io/qt_ws_2025/</a>
           </p>
         </div>
         <div id="right" style="position: absolute; top: 10%; right: 5%; text-align: right;">

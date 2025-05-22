@@ -125,7 +125,7 @@
 
           <!-- Right column -->
           <div id="right">
-            <pre class="fragment" style="font-size: 40%; width: 100%; height: 24vh;" data-id="qtbridges_stringmodel"><code class="python" data-noescape>
+            <pre class="fragment" style="font-size: 40%; width: 100%;" data-id="qtbridges_stringmodel"><code class="python" data-noescape>
 from QtBridges import AutoQmlBridge, updateQML
 
 class StringModel:
@@ -167,8 +167,8 @@ AutoQmlBridge(string_model)
           width: 65%;
           text-align: center;
           margin-left: 185px">
-          <pre style="font-size: 40%; width: 100%; height: 24vh;" data-id="qtbridges_stringmodel">
-            <code class="python" data-noescape data-line-numbers="1,17,19-24">
+          <pre style="font-size: 40%; width: 100%;" data-id="qtbridges_stringmodel">
+            <code class="python" data-noescape data-line-numbers="2,18, 20-25">
 from QtBridges import AutoQmlBridge, updateQML
 
 class StringModel:
@@ -205,7 +205,7 @@ AutoQmlBridge(string_model)
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;">
           <!-- Left column: code -->
           <div id="left">
-            <pre style="font-size: 40%; width: 100%; height: 24vh; margin: 0;" data-id="qtbridges_stringmodel"><code class="python" data-noescape data-line-numbers="2, 21-26">
+            <pre style="font-size: 40%; width: 100%;" data-id="qtbridges_stringmodel"><code class="python" data-noescape data-line-numbers="2, 21-26">
 from QtBridges import AutoQmlBridge, updateQML
 
 class StringModel:
@@ -274,7 +274,7 @@ AutoQmlBridge(string_model)
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;">
           <!-- Left column: code -->
           <div id="left">
-            <pre style="font-size: 40%; width: 100%; height: 23vh; margin: 0;"><code class="python" data-noescape data-line-numbers="17, 11-13">from QtBridges import AutoQmlBridge, updateQML,
+            <pre style="font-size: 40%; width: 100%; margin: 0;"><code class="python" data-noescape data-line-numbers="17, 11-13">from QtBridges import AutoQmlBridge, updateQML,
 
 class StringModel:
   def __init__(self):
@@ -304,17 +304,17 @@ AutoQmlBridge(string_model)
           <div id="right">
             <ul style="font-size: 60%; text-align: left;">
               <li class="fragment">
-                <span style="color:#41CD52; font-weight:bold;">updateQML()</span>
-                <ul>
-                  <li>Notifies QML views that the data is updated </li>
-                  <li>Simple way to sync backend data changes</li>
-                </ul>
-              </li>
-              <li class="fragment">
                 <span style="color:#FF4500; font-weight:bold;">`Changed`</span> signal
                 <ul>
                   <li>Each property associated with Changed signal eg: itemsChanged</li>
                   <li>Triggered when the setter of the property is called</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                <span style="color:#41CD52; font-weight:bold;">updateQML()</span>
+                <ul>
+                  <li>Notifies QML views that the data is updated </li>
+                  <li>Simple way to sync backend data changes</li>
                 </ul>
               </li>
             </ul>
@@ -365,7 +365,6 @@ class StringModel:
   @items.setter
   def items(self, value: list[str]):
     self._items = value
-    (self, "itemsChanged", value)
 
   def add_string(self, new_str: str):
     self._items.append(new_str)
@@ -460,7 +459,7 @@ class StringModel(QAbstractListModel):
           <span style="font-size: 90%; background: #41CD52; color: white; padding: 2px 12px; border-radius: 12px;">WIP</span>
         </h2>
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-          <pre style="font-size: 45%; width: 80%; text-align: left; height: 31vh;">
+          <pre style="font-size: 45%; width: 80%; text-align: left;">
 <code class="python" data-noescape data-line-numbers="2,7,19">
 from PySide6.QtCore import Signal
 from PySide6.QtQml import AutoQmlBridge, updateQML
